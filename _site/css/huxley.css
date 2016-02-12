@@ -99,7 +99,7 @@ a:focus {
 }
 a.grey-link  { color: #333;}
 a.white-link, a:visited.white-link { color: #fff; }
-.main-content a { text-decoration: underline; }
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
 
 
 
@@ -668,7 +668,7 @@ input[type="tel"]:hover, input[type="color"]:hover,
 
 .local-nav>li.current {border-bottom: 3px solid #005297; margin-bottom: -1px;}
 .local-nav>li.current>a, .local-nav>li.current>ul>li>a { color: #005297; }
-
+    
 
 
 /* Header */
