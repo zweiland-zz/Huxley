@@ -21,7 +21,7 @@
 
 	<header role="banner" id="global-header" class="">
 		<div class="header-wrapper">
-			<div class="header-global wrap">
+			<div class="header-global">
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
 						<li class="nav-item fwb">
@@ -50,7 +50,7 @@
 
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/books/">Books</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -61,7 +61,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/magazines/">Magazines</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -70,7 +70,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/machines/">Machines</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -90,7 +90,7 @@
 
 				<nav id="global-utility" class="float-right"> 
 					<ul class="nav-menu">
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
@@ -122,8 +122,60 @@
 			<fieldset>
 				<button class="inline filter-button">Filters</button>
 				<input class="form-control" type="text" placeholder="Search patron name or id">
+				<button class="inline export-button float-right">Export</button>
+			</fieldset>
+			<fieldset class="container popup filters" aria-hidden="false">
+				<div class="row">
+					<div class="col-md-2">
+						<h5 class="small-meta fwb">Status</h5>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Requested
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Master Ordered
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							In Duplication
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Complete
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							In Review
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Master Unavailable
+						</label>
+					</div>
+				</div>
+				<div class="col-md-12 pad-lv3">
+					<a href="#" class="inline-block-i button p0" id="apply-filter">Apply</a>
+					<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+				</div>
 			</fieldset>
 		</form>
+
+		<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
+			<div class="col-md-12">
+		        <div class="media">
+		            <div class="media-image">
+		                <a href="#" class="one-liner reset-filter">Reset</span></a>
+		            </div>
+		            <div class="media-body">
+		                <p class="one-liner">
+		                	<strong>Filtered By:</strong> <span>Status: Complete</span>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 		<table>
 			<thead>
 				<tr>

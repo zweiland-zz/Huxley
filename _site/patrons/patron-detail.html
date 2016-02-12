@@ -21,7 +21,7 @@
 
 	<header role="banner" id="global-header" class="">
 		<div class="header-wrapper">
-			<div class="header-global wrap">
+			<div class="header-global">
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
 						<li class="nav-item fwb">
@@ -50,7 +50,7 @@
 
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/books/">Books</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -61,7 +61,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/magazines/">Magazines</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -70,7 +70,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="/machines/">Machines</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
@@ -90,7 +90,7 @@
 
 				<nav id="global-utility" class="float-right"> 
 					<ul class="nav-menu">
-						<li class="nav-item fwb">
+						<li class="nav-item fwb nav-has-sub">
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
@@ -114,13 +114,16 @@
 		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
 			<div class="col-md-12">
 	<div role="main" id="content" class="content selfclear relative">
-		<div class="header selfclear">
+		<div class="header">
 			<h4><a href="/patrons/">Patrons</a></h4>
 			<h1 class="inline-block-i">Dr. John Patron <span class="small-meta">543134</span></h1>
 	
 			<nav class="local-nav-container selfclear"> 
 				<ul class="nav-menu local-nav selfclear">
-					<li class="nav-item fwb">
+					<li class="nav-item fwb current">
+						<a href="#">Overview</a>
+					</li>
+					<li class="nav-item fwb nav-has-sub">
 						<a href="#">Formats</a>
 						<div class="sub-nav">
 							<ul class="sub-nav-group">
@@ -130,7 +133,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="nav-item fwb">
+					<li class="nav-item fwb nav-has-sub">
 						<a href="#">Books</a>
 						<div class="sub-nav">
 							<ul class="sub-nav-group">
@@ -141,7 +144,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="nav-item fwb">
+					<li class="nav-item fwb nav-has-sub">
 						<a href="#">Magazines</a>
 						<div class="sub-nav">
 							<ul class="sub-nav-group">
@@ -164,7 +167,7 @@
 			</nav>
 		</div>
 		
-		<h2>Overview</h2>
+		<h3 class="below48">Overview</h3>
 
 		<div class="row">
 			<div class="col-md-8 selfclear">
@@ -249,16 +252,50 @@
 							<a href="#">Edit</a>
 						</div>
 					</li>
-					<li class="selfclear">
+					<li class="selfclear detail-item">
 						<div class="col-md-3">
 							<strong>Address</strong>
 						</div>
-						<div class="col-md-8 dim-el4">
+						<div class="col-md-8 dim-el4 view-detail-panel">
 							Primary <strong>1212 South 1st Avenue, Austin, TX 78711-1234</strong><br>
 							Secondary <strong>1234 Main St, Austin, TX, 78702-2134</strong>
 						</div>
+						<div class="col-md-8 edit-detail-panel edit-address">
+							<div class="row">
+								<div class="col-md-3 alignr pad-lv1">
+									<label class="small-meta">Address</label>
+								</div>
+								<div class="col-md-7">
+									<input class="form-control" type="text" name="address1" value="1212 South 1st Avenue">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 alignr pad-lv1">
+									<label class="small-meta">Address 2</label>
+								</div>
+								<div class="col-md-7">
+									<input class="form-control" type="text" name="address1">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 alignr pad-lv1">
+									<label class="small-meta">City</label>
+								</div>
+								<div class="col-md-7">
+									<select class="form-control">
+									<option>TX</option>
+									</select>
+								</div>
+							</div>
+							<div class="row selfclear">
+								<div class="col-md-12 below48">
+									<button class="button p0 inline-block-i">Save changes</button> 
+									<a href="#" class="inline-block-i pad-lv1 close-edit-panel">Cancel</a>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-1 alignr">
-							<a href="#">Edit</a>
+							<a href="#" class="edit-patron-detail-button">Edit</a>
 						</div>
 					</li>
 					<li class="selfclear">
@@ -270,7 +307,7 @@
 							Secondary <strong>Spanish</strong>
 						</div>
 						<div class="col-md-1 alignr">
-							<a href="#">Edit</a>
+							<a href="#" class="edit-patron-detail-button">Edit</a>
 						</div>
 					</li>
 	            </ul>

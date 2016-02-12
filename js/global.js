@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(function() {
 
     $("nav").accessibleMegaMenu({
         /* prefix for generated unique id attributes, which are required 
@@ -28,6 +28,7 @@ $(document).ready(function() {
     });
 
     
+
     /* Search */
 
     $('.search-toggle').on("click", function(e) {
@@ -45,6 +46,7 @@ $(document).ready(function() {
 	});
 
     
+
     /* Filters */
 
     $('.filter-button').on("click", function(e) {
@@ -64,5 +66,26 @@ $(document).ready(function() {
         $(this).parents("fieldset.filters").removeClass("open");
         $(".feedback-block").hide();
     });
+
+
+
+    /* Patron Detail Page */
+
+    $('.edit-patron-detail-button').on("click", function(e) {
+        e.preventDefault();
+        $(this).text("Close").addClass("close-edit-panel");
+
+        $(this).parents("li.detail-item").find(".edit-detail-panel").show();
+        $(this).parents("li.detail-item").find(".view-detail-panel").hide();
+    });
+
+    $('li.detail-item').find(".close-edit-panel").on("click", function(e) {
+        e.preventDefault();
+
+        $(this).parents("li.detail-item").find(".edit-patron-detail-button").text("Edit");
+        $(this).parents("li.detail-item").find(".edit-detail-panel").hide();
+        $(this).parents("li.detail-item").find(".view-detail-panel").show();
+    });
+    
 
   });

@@ -100,8 +100,8 @@ a:focus {
 a.grey-link  { color: #333;}
 a.white-link, a:visited.white-link { color: #fff; }
 h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
-
-
+.main-content a:hover {text-decoration: underline;}
+.main-content .sub-nav a {text-decoration: none;}
 
 /* Skip Links */
 
@@ -486,8 +486,6 @@ label {
     color: #000000;
     font-weight: 600;
     display: block;
-    
-    padding-bottom: .8em;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -507,7 +505,7 @@ input[type="tel"], input[type="color"], .uneditable-input, .faux-file {
     min-width: 50px;
     width: 100%;
     min-height: 40px;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
     border-radius: 4px;
 }
 
@@ -641,7 +639,7 @@ input[type="tel"]:hover, input[type="color"]:hover,
 }
 
 .local-nav {
-    border-bottom: solid 1px #e0e0e0;
+    border-bottom: solid 1px #BFBFBF;
     display: block;
 }
 
@@ -650,6 +648,8 @@ input[type="tel"]:hover, input[type="color"]:hover,
     overflow: visible;
     vertical-align: top;
     margin-right: 30px;
+    float: none;
+    height: auto;
 }
 
 .local-nav>li>a, .local-nav>li .hover-list>li>a {
@@ -659,6 +659,7 @@ input[type="tel"]:hover, input[type="color"]:hover,
     line-height: 1;
     float: left;
     text-decoration: none;
+    padding: 0;
 }
 
 .local-nav>li>a:hover{
@@ -667,10 +668,18 @@ input[type="tel"]:hover, input[type="color"]:hover,
 
 .local-nav>li.current {border-bottom: 3px solid #005297; margin-bottom: -1px;}
 .local-nav>li.current>a, .local-nav>li.current>ul>li>a { color: #005297; }
+
+.local-nav > li > .sub-nav li a {
+    font-size: 16px;
+}
+.local-nav > li > .sub-nav {
+    border-radius: 0 0 6px 6px;
+    margin-top: -4px;
+}
     
 
 
-/* Header */
+/* Headers */
 
 #global-header {
     background-color: #F8F8F8;
@@ -681,6 +690,13 @@ input[type="tel"]:hover, input[type="color"]:hover,
     padding: 15px 15px;
 }
 
+.header {
+    overflow: visible;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    position: relative;
+    z-index: 5;
+}
 
 
 /* Logo */
@@ -859,6 +875,18 @@ input[type="tel"]:hover, input[type="color"]:hover,
     font-size: 1.125em;
     position: relative;
 }
+.nav-has-sub > a:first-child::after {
+    content:"";
+    position: relative;
+    float: right;
+    margin: 13px 0 0 4px;
+    background: url(/img/icon-chevron-down.png) 0 0 no-repeat;
+    width: 10px; height: 5px;
+    background-size: contain;
+}
+.local-nav .nav-has-sub > a:first-child::after {
+    margin-top: 7px;
+}
 .nav-border-left {
 	padding-left: 15px;
 	margin-left: 15px;
@@ -930,14 +958,14 @@ input[type="tel"]:hover, input[type="color"]:hover,
 .sub-nav li a {
 	color: #000;
 	display: block;
-	font-size: 105%;
+	font-size: 16px;
 	margin: 0;
 	padding: 10px 15px;
 	min-width: 262px;
 	line-height: 30px;
 }
 
-#global-header .sub-nav li a:hover, #global-header .sub-nav li a:focus {
+.sub-nav li a:hover, .sub-nav li a:focus {
 	background: #ffbf47;
 	color: #000;
 }
@@ -1168,8 +1196,7 @@ clear: both;
 
 .wrap {
     padding: 0 .9375em 0 .9375em;
-    /*max-width: 1170px;*/
-	/*max-width: 1300px;*/
+    max-width: 1170px;
 	margin: 0 auto;
 	height: inherit;
 }
@@ -1207,4 +1234,15 @@ clear: both;
 }
 .close-overlay:active {
     top: 17px;
+}
+
+
+/* Specific Pages */
+
+/* Patron Detail */
+.edit-detail-panel {
+    display: none;
+}
+.edit-profile-btn {
+
 }
