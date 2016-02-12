@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
-<html> 
-<head> 
-<title>Machines | Huxley</title>
-<meta charset="utf-8">
-<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved."> 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-<meta name="apple-mobile-web-app-capable" content="yes"> 
-<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/favicons//ms-icon-144x144.png">
-<meta content="img/favicons/favicon.ico">
-<link rel="stylesheet" type="text/css" href="../css/patterns.css">
-<link rel="stylesheet" type="text/css" href="../css/huxley.css">
+<html>
+<head>
+	<title>Machines |  HUXLEY</title>
+	<meta charset="utf-8">
+	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="img/favicons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/patterns.css">
+	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
+</head>
 <body>
-<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+	<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
 	<div id="skiplink-container">
 		<div>
@@ -29,16 +26,16 @@
 					<ul class="nav-menu">
 						<li class="nav-item fwb">
 							<a href="#">
-								<img src="../img/icon-menu.png" alt="Navigate to Business Groups" />
+								<img src="/img/icon-menu.png" alt="Navigate to Business Groups" />
 							</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
-									<li><a href="#">Reader Services</a></li>
-									<li><a href="#">Collections</a></li>
+									<li><a href="/reader-services/">Reader Services</a></li>
+									<li><a href="/collections/">Collections</a></li>
 									<li><a href="/audio/">Audio</a></li>
 									<li><a href="/circulation/">Circulation</a></li>
 									<li><a href="/public-awareness/">Public Awareness</a></li>
-									<li><a href="#">Office Services</a></li>
+									<li><a href="/office-services/">Office Services</a></li>
 								</ul>
 							</div>
 						</li>
@@ -47,14 +44,14 @@
 
 				<div class="header-logo">
 					<a href="/" title="Go to Dashboard" id="logo" class="content">
-						<img src="../img/huxley-logo.png" alt="Go to Dashboard" />
+						<img src="/img/huxley-logo.png" alt="Go to Dashboard" />
 					</a>
 				</div>
 
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
 						<li class="nav-item fwb">
-							<a href="#">Books</a>
+							<a href="/books/">Books</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
 									<li><a href="#">Interest Areas</a></li>
@@ -65,7 +62,7 @@
 							</div>
 						</li>
 						<li class="nav-item fwb">
-							<a href="#">Magazines</a>
+							<a href="/magazines/">Magazines</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
 									<li><a href="#">Magazine Media</a></li>
@@ -115,71 +112,76 @@
 	<div class="wrap">
 		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
 			<div class="col-md-12">
-				<div role="main" id="content" class="content selfclear relative">
-					<div class="header">
-						<h1 class="inline-block-i">Machines</h1>
-	                	<ul class="local-nav selfclear">
-                			<li class="current"><a href="#">Models</a></li>
-                			<li><a href="#">Select Queue</a></li>
-                			<li><a href="#">Hold Ranges</a></li>
-                			<li><a href="#">Repair Centers</a></li>
-	                   </ul>
-					</div>
-				</div>
-			</div>
+	<div role="main" id="content" class="content selfclear relative">
+		<div class="header">
+			<h1 class="inline-block-i">Machines</h1>
+        	<ul class="local-nav selfclear">
+    			<li class="current"><a href="#">Models</a></li>
+    			<li><a href="#">Select Queue</a></li>
+    			<li><a href="#">Hold Ranges</a></li>
+    			<li><a href="#">Repair Centers</a></li>
+           </ul>
+		</div>
+	</div>
+</div>
 		</div>
 	</div>
 
-	<div id="global-search-overlay" role="search" aria-hidden="false" class="search-overlay-container navigation-overlay selfclear" style="z-index: 1000; visibility: visible; display: none; opacity: 1; transform: translateY(0px);">
+<div id="global-search-overlay" role="search" aria-hidden="false" class="search-overlay-container navigation-overlay selfclear" style="z-index: 1000; visibility: visible; display: none; opacity: 1; transform: translateY(0px);">
 
-		<button title="Close menu" class="close-overlay float-right">Close [esc]</button>
+	<button title="Close menu" class="close-overlay float-right">Close</button>
 
-		<div class="wrap global-search">
-			<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate">
-				<div class="header container">
-					<h2 class="alignc">Search Books, Magazines, Machines or Patrons</h2>
-				</div>
-				<div class="container relative below18">
-					<div class="col-md-2">
-						<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
-							<option selected="selected" value="search-alias=books">Books</option>
-							<option value="search-alias=books-keyword">&nbsp;&nbsp;&nbsp;Keyword</option>
-							<option value="search-alias=books-title">&nbsp;&nbsp;&nbsp;Title</option>
-							<option value="search-alias=books-author">&nbsp;&nbsp;&nbsp;Author</option>
-							<option value="search-alias=books-book-number">&nbsp;&nbsp;&nbsp;Book Number</option>
-							<option value="search-alias=books-narrator">&nbsp;&nbsp;&nbsp;Narrator</option>
-							<option value="search-alias=books-series">&nbsp;&nbsp;&nbsp;Series</option>
-							<option value="search-alias=books-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
-							<option value="search-alias=magazines">Magazines</option>
-							<option value="search-alias=magazines-keyword">&nbsp;&nbsp;&nbsp;Title</option>
-							<option value="search-alias=magazines-title">&nbsp;&nbsp;&nbsp;Code</option>
-							<option value="search-alias=magazines-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
-							<option value="search-alias=patron">Patron</option>
-							<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Name</option>
-							<option value="search-alias=patron-ID">&nbsp;&nbsp;&nbsp;Patron ID</option>
-							<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Email</option>
-							<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Zip</option>
-						</select>
-					</div>
-					<div class="col-md-8">
-						<input class="form-control large-control" id="global-search" name="global-search" type="search" tabindex="0" placeholder="Search">
-					</div>
-					<div class="col-md-2">
-						<input class="submit button p0 button-large col-md-12" type="submit" value="Search">
-						<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
-					</div>
-			</div> 
-			<div class="container line below18">
-				<div class="col-m-12 alignc small-meta underline cursorpointer">
-					<a title="Search Tips">Advanced search keywords</a>
-				</div>
+	<div class="wrap global-search">
+
+		<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate"> 
+			<div class="header col-md-12">
+				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
 			</div>
-		</form>
-	</div>
 
-    <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../js/jquery-accessibleMegaMenu.js"></script>
-    <script src="../js/global.js"></script>
+			<div class="container relative below18">
+				<div class="col-md-2">
+					<select class="site-search-dropdown" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
+						<option selected="selected" value="search-alias=books">Books</option>
+						<option value="search-alias=books-keyword">&nbsp;&nbsp;&nbsp;Keyword</option>
+						<option value="search-alias=books-title">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=books-author">&nbsp;&nbsp;&nbsp;Author</option>
+						<option value="search-alias=books-book-number">&nbsp;&nbsp;&nbsp;Book Number</option>
+						<option value="search-alias=books-narrator">&nbsp;&nbsp;&nbsp;Narrator</option>
+						<option value="search-alias=books-series">&nbsp;&nbsp;&nbsp;Series</option>
+						<option value="search-alias=books-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=magazines">Magazines</option>
+						<option value="search-alias=magazines-keyword">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=magazines-title">&nbsp;&nbsp;&nbsp;Code</option>
+						<option value="search-alias=magazines-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=patron">Patron</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Name</option>
+						<option value="search-alias=patron-ID">&nbsp;&nbsp;&nbsp;Patron ID</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Email</option>
+						<option value="search-alias=patron-address">&nbsp;&nbsp;&nbsp;Address</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Zip</option>
+					</select>
+				</div>
+				<div class="col-md-8">
+					<input id="global-search" name="global-search" type="search" tabindex="0" placeholder="Search">
+				</div>
+				<div class="col-md-2">
+					<input class="submit button p0 col-md-12" type="submit" value="Search">
+					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
+				</div>
+		</div> 
+		<div class="container line below18">
+			<div class="col-m-12 alignc small-meta">
+				<a title="Search Tips">Advanced search keywords</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery-accessibleMegaMenu.js"></script>
+<script src="/js/global.js"></script>
+
 </body>
 </html>
