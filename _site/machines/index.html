@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Machines |  HUXLEY</title>
+	<title>Machines |  Huxley</title>
 	<meta charset="utf-8">
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -54,7 +54,7 @@
 							<a href="/books/">Books</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
-									<li><a href="#">Interest Areas</a></li>
+									<li><a href="#">Subject Heading &amp; Interest Areas</a></li>
 									<li><a href="#">Book Series</a></li>
 									<li><a href="#">Book Reserves</a></li>
 									<li><a href="#">ILL Book Reserves</a></li>
@@ -78,6 +78,7 @@
 									<li><a href="#">Select Queue</a></li>
 									<li><a href="#">Hold Ranges</a></li>
 									<li><a href="#">Repair Centers</a></li>
+									<li><a href="#">Accessories</a></li>
 								</ul>
 							</div>
 						</li>
@@ -93,7 +94,7 @@
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
-									<li><li><a href="#">Profile</a></li>
+									<li><a href="#">Profile</a></li>
 									<li><a href="#">Reports</a></li>
 									<li><a href="#">Settings</a></li>
 									<li><a href="#">Log out</a></li>
@@ -115,13 +116,205 @@
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
 			<h1 class="inline-block-i">Machines</h1>
+            <a href="/magazines/add-magazine-title/" class="add-btn button p0">Add machine</a>
+            <a href="/magazines/add-magazine-title/" class="add-btn button">Add machine invoice</a>
+
         	<ul class="local-nav selfclear">
-    			<li class="current"><a href="#">Models</a></li>
+                <li class="current"><a href="/machines/">Machine List</a></li>
+    			<li><a href="#">Models</a></li>
     			<li><a href="#">Select Queue</a></li>
     			<li><a href="#">Hold Ranges</a></li>
     			<li><a href="#">Repair Centers</a></li>
+                <li><a href="#">Accessories</a></li>
            </ul>
 		</div>
+
+        <h3>Machine List</h3>
+
+        <form class="table-filters">
+            <fieldset>
+                <button class="inline filter-button">Filters</button>
+                <input class="form-control" type="text" placeholder="Search title or code">
+                <button class="inline export-button float-right">Export</button>
+            </fieldset>
+            <fieldset class="container popup filters" aria-hidden="false">
+                <div class="col-md-2">
+                    <h5 class="small-meta fwb">Status</h5>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        Requested
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        Master Ordered
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        In Duplication
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        Complete
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        In Review
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="status" class="form-radio">
+                        Master Unavailable
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="small-meta fwb">Staff Member</h5>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Miles Lewis
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Craig York
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Zak Weiland
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Larry Olivarez
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Quyen Kieu
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="staff-member" class="form-radio">
+                        Sirish Potru
+                    </label>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="small-meta fwb">Book or Magazine</h5>
+                    <label class="label-radio">
+                        <input type="radio" name="book-mag" class="form-radio">
+                        Book
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="book-mag" class="form-radio">
+                        Magazine
+                    </label>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="small-meta fwb">Request Type</h5>
+                    <label class="label-radio">
+                        <input type="radio" name="request-type" class="form-radio">
+                        New Book
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="request-type" class="form-radio">
+                        Add New Rush
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="request-type" class="form-radio">
+                        Request Type
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="request-type" class="form-radio">
+                        Request Type
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="request-type" class="form-radio">
+                        Request Type
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="small-meta fwb">Format</h5>
+                    <label class="label-radio">
+                        <input type="radio" name="format" class="form-radio">
+                        Cassette
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="format" class="form-radio">
+                        Digital Flash
+                    </label>
+                </div>
+                <div class="col-md-12 pad-lv3">
+                    <a href="#" class="inline-block-i button p0" id="apply-filter">Apply</a>
+                    <a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-image">
+                        <a href="#" class="one-liner reset-filter">Reset</span></a>
+                    </div>
+                    <div class="media-body">
+                        <p class="one-liner">
+                            <strong>Filtered By:</strong> <span>Status: Complete</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Model</th>
+                    <th>Serial #</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TBM</td>
+                    <td>AE1</td>
+                    <td><a href="#">112</a></td>
+                    <td><a href="#">40</a></td>
+                    <td>Assigned</td>
+                    <td>01/15/2016</td>
+                </tr>
+                <tr>
+                    <td>TBM</td>
+                    <td>AE1</td>
+                    <td><a href="#">112</a></td>
+                    <td><a href="#">40</a></td>
+                    <td>Assigned</td>
+                    <td>01/15/2016</td>
+                </tr>
+                <tr>
+                    <td>TBM</td>
+                    <td>AE1</td>
+                    <td><a href="#">112</a></td>
+                    <td><a href="#">40</a></td>
+                    <td>Assigned</td>
+                    <td>01/15/2016</td>
+                </tr>
+                <tr>
+                    <td>TBM</td>
+                    <td>AE1</td>
+                    <td><a href="#">112</a></td>
+                    <td><a href="#">40</a></td>
+                    <td>Assigned</td>
+                    <td>01/15/2016</td>
+                </tr>
+                <tr>
+                    <td>TBM</td>
+                    <td>AE1</td>
+                    <td><a href="#">112</a></td>
+                    <td><a href="#">40</a></td>
+                    <td>Assigned</td>
+                    <td>01/15/2016</td>
+                </tr>
+            </tbody>
+        </table>
 	</div>
 </div>
 		</div>

@@ -38,19 +38,9 @@ html, body, button, input, table, td, th {
     font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt, var, b, u, i, center, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td {
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
-    font-weight: normal;
-}
-
 input:focus, textarea:focus, select:focus, button:focus, #global-header input:focus {
     outline: 3px solid #ffbf47;
 }
-
-.float-left  { float: left; }
-.float-right { float: right; }
 
 html {
     font-size: 62.5%;
@@ -72,15 +62,8 @@ body {
     padding-bottom: 200px;
 }
 
-ul, ol {
-    font-size: 1em;
-    line-height: 1.6;
-    outline: 0;
-}
-
-ul {
-    list-style: none;
-}
+.float-left  { float: left; }
+.float-right { float: right; }
 
 .selfclear:before, .selfclear:after, .container:after, .container:before {
     content: " ";
@@ -99,7 +82,10 @@ ul {
     position: relative;
 }
 
+
+
 /* Links */
+
 a {
 	color: #005297;
 	text-decoration: none;
@@ -107,11 +93,6 @@ a {
 a:hover {
     color: #2E8ACA;
 }
-/*
-a:visited {
-    color: #4D11A0;
-    color: #005297;
-}*/
 a:focus {
 	background-color: #ffbf47;
 	outline: 3px solid #ffbf47;
@@ -120,7 +101,10 @@ a.grey-link  { color: #333;}
 a.white-link, a:visited.white-link { color: #fff; }
 .main-content a { text-decoration: underline; }
 
+
+
 /* Skip Links */
+
 #skiplink-container {
     text-align: center;
     background: #D8EFFF;
@@ -167,6 +151,16 @@ a, span {
 
 #content a.button {
     text-decoration: none; 
+}
+
+ul, ol {
+    font-size: 1em;
+    line-height: 1.6;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 li>a {
@@ -408,6 +402,7 @@ button, .button-large, .button {
 
 button:hover, .button:hover, .button:focus {
     background-color: #BFBFBF;
+    color: #000;
 }
 
 button:active, .button:active {
@@ -667,9 +662,12 @@ input[type="tel"]:hover, input[type="color"]:hover,
     text-decoration: none;
 }
 
+.local-nav>li>a:hover{
+    color: #2E8ACA;
+}
+
 .local-nav>li.current {border-bottom: 3px solid #005297; margin-bottom: -1px;}
 .local-nav>li.current>a, .local-nav>li.current>ul>li>a { color: #005297; }
-
 
 
 
