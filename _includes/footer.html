@@ -1,0 +1,55 @@
+<div id="global-search-overlay" role="search" aria-hidden="false" class="search-overlay-container navigation-overlay selfclear" style="z-index: 1000; visibility: visible; display: none; opacity: 1; transform: translateY(0px);">
+
+	<button title="Close menu" class="close-overlay float-right">Close</button>
+
+	<div class="wrap global-search">
+
+		<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate"> 
+			<div class="header col-md-12">
+				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
+			</div>
+
+			<div class="container relative below18">
+				<div class="col-md-2">
+					<select class="site-search-dropdown" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
+						<option selected="selected" value="search-alias=books">Books</option>
+						<option value="search-alias=books-keyword">&nbsp;&nbsp;&nbsp;Keyword</option>
+						<option value="search-alias=books-title">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=books-author">&nbsp;&nbsp;&nbsp;Author</option>
+						<option value="search-alias=books-book-number">&nbsp;&nbsp;&nbsp;Book Number</option>
+						<option value="search-alias=books-narrator">&nbsp;&nbsp;&nbsp;Narrator</option>
+						<option value="search-alias=books-series">&nbsp;&nbsp;&nbsp;Series</option>
+						<option value="search-alias=books-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=magazines">Magazines</option>
+						<option value="search-alias=magazines-keyword">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=magazines-title">&nbsp;&nbsp;&nbsp;Code</option>
+						<option value="search-alias=magazines-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=patron">Patron</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Name</option>
+						<option value="search-alias=patron-ID">&nbsp;&nbsp;&nbsp;Patron ID</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Email</option>
+						<option value="search-alias=patron-address">&nbsp;&nbsp;&nbsp;Address</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Zip</option>
+					</select>
+				</div>
+				<div class="col-md-8">
+					<input id="global-search" name="global-search" type="search" tabindex="0" placeholder="Search">
+				</div>
+				<div class="col-md-2">
+					<input class="submit button p0 col-md-12" type="submit" value="Search">
+					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
+				</div>
+		</div> 
+		<div class="container line below18">
+			<div class="col-m-12 alignc small-meta">
+				<a title="Search Tips">Advanced search keywords</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery-accessibleMegaMenu.js"></script>
+<script src="/js/global.js"></script>
