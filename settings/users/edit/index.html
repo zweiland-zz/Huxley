@@ -25,14 +25,20 @@ title: Zak Weiland | Edit | Users | Settings
         <form method="post" class="row">
         	<fieldset class="col-md-6">
         		<legend>Edit user</legend>
-        		<label>Email address</label>
-        		<input type="email" class="form-control" value="zak.weiland@ambonare.com">
-        		<label>Username</label>
-        		<input type="text" class="form-control" value="zak.weiland">
-        		<label>Full Name</label>
-        		<input type="text" class="form-control" value="Zak Weiland">
-        		<label>Position code</label>
+        		<label><span class="required">*</span> First Name</label>
+        		<input type="text" class="form-control" value="Zak">
+        		<label><span class="required">*</span> Last Name</label>
+        		<input type="text" class="form-control" value="Weiland">
+        		<label><span class="required">*</span> Position title</label>
+        		<select class="form-control">
+        			<option selected="selected">Division Director</option>
+        		</select>
+        		<label><span class="required">*</span> Project code</label>
         		<input type="text" class="form-control" value="CCW3">
+        		<label>Email address</label>
+        		<input type="email" class="form-control disabled" disabled="disabled" value="zak.weiland@ambonare.com">
+        		<label>Username</label>
+        		<input type="text" class="form-control disabled" disabled="disabled" value="zak.weiland">
         		<div class="form-controls selfclear">
 	        		<button class="button btn-primary float-left">Save</button>
 	        		<a href="/settings/users/view" class="i-inline-block pad-lv1 float-left">Cancel</a>

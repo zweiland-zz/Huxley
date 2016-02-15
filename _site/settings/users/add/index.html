@@ -129,23 +129,30 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="below12">
-			<p><a href="/settings/users/view/">&lsaquo; Back to users</a></p>
-			<h2>Create new user</h2>
-        </div>
-        <form action="/settings/users/view/" method="post" class="row">
+        	<div class="below12">
+                	<p><a href="/settings/users/view/">&lsaquo; Back to users</a></p>
+                	<h2>Create new user</h2>
+                </div>
+        <form method="post" class="row">
         	<fieldset class="col-md-6">
-        		<legend>Create new user</legend>
-        		<label>Email address</label>
+        		<legend>Edit user</legend>
+        		<label><span class="required">*</span> First Name</label>
+        		<input type="text" class="form-control">
+        		<label><span class="required">*</span> Last Name</label>
+        		<input type="text" class="form-control">
+        		<label><span class="required">*</span> Position title</label>
+        		<select class="form-control">
+                                <option selected="selected">Select</option>
+        			<option>Division Director</option>
+        		</select>
+        		<label><span class="required">*</span> Project code</label>
+        		<input type="text" class="form-control">
+        		<label><span class="required">*</span> Email address</label>
         		<input type="email" class="form-control">
-        		<label>Username</label>
-        		<input type="text" class="form-control">
-        		<label>Full Name</label>
-        		<input type="text" class="form-control">
-        		<label>Position code</label>
+        		<label><span class="required">*</span> Username</label>
         		<input type="text" class="form-control">
         		<div class="form-controls selfclear">
-	        		<button class="button btn-primary float-left">Save</button>
+	        		<button class="button btn-primary float-left">Create new user</button>
 	        		<a href="/settings/users/view" class="i-inline-block pad-lv1 float-left">Cancel</a>
         		</div>
         	</fieldset>

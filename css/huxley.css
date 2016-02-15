@@ -277,7 +277,7 @@ p, .p {
 }
 
 .regular>li a:hover {
-    background: #f2f2f2;
+    background: #EEEEEE;
 }
 
 .regular>li.selected a {
@@ -379,7 +379,7 @@ table tbody tr:hover {
 /* Buttons */
 
 button, .button-large, .button {
-    background: #dedede;
+    background: #EEEEEE;
     color: #000;
     position: relative;
     display: -moz-inline-stack;
@@ -471,6 +471,7 @@ select {
     border-collapse: separate;
     width: 100%;
     max-width: 635px;
+    margin-bottom: 14px;
 }
 
 legend {
@@ -721,7 +722,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 /* Headers */
 
 #global-header {
-    background-color: #F8F8F8;
+    background-color: #EEEEEE;
     width: 100%;
 }
 #global-header .header-wrapper {
@@ -941,7 +942,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 #global-header .nav-item > a:hover,
 #global-header .nav-item > a:focus,
 #global-header .nav-item > a.open {
-    background-color: #ffbf47;
+    background-color: #fff;
     color: black;
 }
 .nav-item > a.open {
@@ -1001,7 +1002,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 
 .sub-nav li a:hover, .sub-nav li a:focus {
-	background: #ffbf47;
+	background: #EEE;
 	color: #000;
 }
 
@@ -1234,7 +1235,7 @@ clear: both;
     min-height: 20px;
     padding: 5px;
     margin-bottom: 20px;
-    background-color: #d8d8d8;
+    background-color: #EEEEEE;
     border-radius: 4px;
 }
 
@@ -1261,7 +1262,7 @@ clear: both;
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #f7f7f7;
+    background-color: #eeeeee;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     padding: 3.75em 1.875em 3.75em 1.875em;
