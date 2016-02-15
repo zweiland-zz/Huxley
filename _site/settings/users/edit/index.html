@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Magazines |  Huxley</title>
+	<title>Zak Weiland | Edit | Users | Settings |  Huxley</title>
 	<meta charset="utf-8">
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -117,99 +117,40 @@
 			<div class="col-md-12">
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
-			<h1 class="inline-block-i">Magazines</h1>
-			<a href="/magazines/add-magazine-title/" class="add-btn button btn-primary">Add magazine title</a>
-
-        	<ul class="local-nav selfclear">
-    			<li class="current"><a href="/magazines/">Magazine List</a></li>
-    			<li><a href="#">Magazine Media</a></li>
-    			<li><a href="#">Producers</a></li>
-           </ul>
+			<h1 class="inline-block-i">Settings</h1>
+			<nav class="local-nav-container selfclear"> 
+				<ul class="nav-menu local-nav selfclear">
+					<li class="nav-item fwb current">
+						<a href="/settings/users/">Users</a>
+					</li>
+					<li class="nav-item fwb">
+						<a href="/settings/roles/">Roles</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-
-		<h3>Magazine List</h3>
-
-		<form class="table-filters">
-			<fieldset>
-				<button class="inline filter-button">Filters</button>
-				<input class="form-control" type="text" placeholder="Search title or code">
-				<button class="inline export-button float-right">Export</button>
-			</fieldset>
-			<fieldset class="container popup filters" aria-hidden="false">
-                <div class="row filter-list">
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Producer</h5>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Any
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Cancel
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							D APH
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							D CMLS
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							D News
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Free
-						</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 pad-lv3">
-						<a href="#" class="inline-block-i button btn-primary" id="apply-filter">Apply</a>
-						<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
-					</div>
-				</div>
-			</fieldset>
-		</form>
-
-		<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
-			<div class="col-md-12">
-		        <div class="media">
-		            <div class="media-image">
-		                <a href="#" class="one-liner reset-filter">Reset</span></a>
-		            </div>
-		            <div class="media-body">
-		                <p class="one-liner">
-		                	<strong>Filtered By:</strong> <span>Status: Complete</span>
-		                </p>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
-		<table>
-			<thead>
-				<tr>
-					<th class="th-title">Title</th>
-					<th>Code</th>
-					<th>Formats</th>
-					<th>Frequency</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#">TEXAS MONTHLY</a></td>
-					<td>TMM</td>
-					<td>LB,FL,DF,DD,DB,CB</td>
-					<td>4</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="below12">
+			<p><a href="/settings/users/view">&lsaquo; Back to user</a></p>
+			<h2>Zak Weiland</h2>
+        </div>
+        <form method="post" class="row">
+        	<fieldset class="col-md-6">
+        		<legend>Edit user</legend>
+        		<label>Email address</label>
+        		<input type="email" class="form-control" value="zak.weiland@ambonare.com">
+        		<label>Username</label>
+        		<input type="text" class="form-control" value="zak.weiland">
+        		<label>Full Name</label>
+        		<input type="text" class="form-control" value="Zak Weiland">
+        		<label>Position code</label>
+        		<input type="text" class="form-control" value="CCW3">
+        		<div class="form-controls selfclear">
+	        		<button class="button btn-primary float-left">Save</button>
+	        		<a href="/settings/users/view" class="i-inline-block pad-lv1 float-left">Cancel</a>
+        		</div>
+        	</fieldset>
+        </form>
 	</div>
-</div>
-</div>
 </div>
 		</div>
 	</div>

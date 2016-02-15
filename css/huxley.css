@@ -140,7 +140,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
 .highlight-color {
     background-color: #F8F8F8;
 }
-.text-red {color:#A91E2F !important;}
+.text-red, .required {color:#A91E2F !important;}
 .text-light-grey {color:#BFBFBF !important;}
 
 
@@ -483,6 +483,7 @@ legend {
     font-family: Arial, sans-serif;
     margin: 0 0 1.2em 0;
     line-height: 1.6em;
+    display:none;
 }
 
 label {
@@ -492,6 +493,7 @@ label {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 6px;
 }
 
 textarea, input[type="text"], 
@@ -508,7 +510,7 @@ input[type="tel"], input[type="color"], .uneditable-input, .faux-file {
     min-width: 50px;
     width: 100%;
     min-height: 40px;
-    margin: 0 0 5px 0;
+    margin: 0 0 14px 0;
     border-radius: 4px;
 }
 
@@ -530,6 +532,12 @@ input[type="radio"], input[type="checkbox"] { margin-left: 0; margin-top: 0; pos
 :-moz-placeholder { color: #BFBFBF; }
 ::-moz-placeholder { color: #BFBFBF; }
 :-ms-input-placeholder { color: #BFBFBF; }
+
+input.disabled {
+ background: #f8f8f8;
+ color: #BFBFBF;
+ cursor: not-allowed;
+}
 
 .field-wrapper {
     margin: 0;
@@ -626,14 +634,20 @@ input[type="radio"], input[type="checkbox"] { margin-left: 0; margin-top: 0; pos
 }
 
 .table-filters .form-control {
-    max-width: 362px;
+    max-width: 326px;
     margin-bottom: 0;
+}
+
+.inline-search-wrap {
+    display: inline-block;
+    position: relative;
+    width: 326px;
 }
 
 .inline-search-wrap::after {
     content: "";
     position: absolute;
-    right: 27px; top: 11px;
+    right: 12px; top: 11px;
     width: 16px; height: 17px;
     z-index: 100;
     background-image: url(../img/search-button.png);
@@ -679,11 +693,11 @@ input[type="search"].form-control-search { padding-right: 30px; }
 .local-nav>li>a, .local-nav>li .hover-list>li>a {
     color: #000000;
     font-weight: 600;
-    margin: 15px 0 15px 0;
+    padding: 15px 0 15px 0;
     line-height: 1;
     float: left;
     text-decoration: none;
-    padding: 0;
+    margin: 0;
 }
 
 .main-content .local-nav>li>a:hover{
@@ -1167,7 +1181,7 @@ clear: both;
 
 .feedback-block {
     font-size: 15px;
-    padding: .8em 0 .8em 0;
+    padding: 5px 0 5px 0;
     background-color: #ccebf3;
     border-radius: 6px;
     color: #000;

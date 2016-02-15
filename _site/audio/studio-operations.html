@@ -97,7 +97,7 @@
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
-									<li><a href="#">Profile</a></li>
+									<li><a href="/settings/users/view/">Profile</a></li>
 									<li><a href="/settings/users/">Settings</a></li>
 									<li><a href="#">Log out</a></li>
 								</ul>
@@ -129,13 +129,15 @@
 		<h3>Studio Operations</h3>
 
 		<form class="table-filters">
-			<fieldset>
+			<fieldset class="well">
 				<button class="inline filter-button">Filters</button>
-				<input class="form-control" type="text" placeholder="Search title or code">
+				<div class="inline-search-wrap">
+					<input class="form-control" type="text" placeholder="Search title or code">
+				</div>
 				<button class="inline export-button float-right">Export</button>
 			</fieldset>
 			<fieldset class="container popup filters" aria-hidden="false">
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<h5 class="small-meta fwb">Status</h5>
 					<label class="label-radio">
 						<input type="radio" name="status" class="form-radio">
