@@ -85,18 +85,20 @@
 						<li class="nav-item fwb">
 							<a href="/patrons/">Patrons</a>
 						</li>
+						<li class="nav-item fwb">
+							<a href="/reports/">Reports</a>
+						</li>
 					</ul>
 				</nav>
 
 				<nav id="global-utility" class="float-right"> 
-					<ul class="nav-menu">
+					<ul class="nav-menu selfclear">
 						<li class="nav-item fwb nav-has-sub">
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
 									<li><a href="#">Profile</a></li>
-									<li><a href="#">Reports</a></li>
-									<li><a href="#">Settings</a></li>
+									<li><a href="/settings/users/">Settings</a></li>
 									<li><a href="#">Log out</a></li>
 								</ul>
 							</div>
@@ -114,9 +116,10 @@
 		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
 			<div class="col-md-12">
 	<div role="main" id="content" class="content selfclear relative">
+
 		<div class="header">
 			<h1 class="inline-block-i">Books</h1>
-			<a href="/books/add-book-title/" class="add-btn button p0">Add book title</a>
+			<a href="/books/add-book-title/" class="add-btn button btn-primary">Add book title</a>
 
         	<ul class="local-nav selfclear">
     			<li class="current"><a href="/magazines/">Book List</a></li>
@@ -156,7 +159,7 @@
 					<td>No</td>
 				</tr>
 				<tr>
-					<td><a href="#">BLEITHDALE ROMANCE</a></td>
+					<td><a href="/books/book-detail.html">HONEYMOON SUITE</a></td>
 					<td>Jane Author</td>
 					<td>English</td>
 					<td>IT</td>
@@ -207,7 +210,7 @@
 				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
 			</div>
 
-			<div class="container relative below18">
+			<div class="container relative below48">
 				<div class="col-md-2">
 					<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
 						<option selected="selected" value="search-alias=books">Books</option>
@@ -234,17 +237,17 @@
 					<input id="global-search" class="form-control large-control" name="global-search" type="search" tabindex="0" placeholder="Search">
 				</div>
 				<div class="col-md-2">
-					<input class="submit button button-large p0 col-md-12" type="submit" value="Search">
+					<input class="submit button button-large btn-primary col-md-12" type="submit" value="Search">
 					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
 				</div>
-		</div> 
-		<div class="container line below18">
-			<div class="col-m-12 alignc small-meta">
-				<a title="Search Tips">Advanced search keywords</a>
+			</div> 
+			<div class="container line below18">
+				<div class="col-m-12 alignc small-meta">
+					<a title="Search Tips">Advanced search keywords</a>
+				</div>
 			</div>
-		</div>
-	</form>
-</div>
+		</form>
+	</div>
 
 
 <!-- Scripts -->

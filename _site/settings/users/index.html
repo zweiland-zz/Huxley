@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Public Awareness |  Huxley</title>
+	<title>Users | Settings |  Huxley</title>
 	<meta charset="utf-8">
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -117,14 +117,104 @@
 			<div class="col-md-12">
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
-			<h1 class="inline-block-i">Public Awareness</h1>
-        	<ul class="local-nav selfclear">
-    			<li class="current"><a href="#">Overview</a></li>
-    			<li><a href="#">TBP Service Regions</a></li>
-    			<li><a href="#">General Information</a></li>
-    			<li><a href="#">Mailing Label Template</a></li>
-           </ul>
+			<h1 class="inline-block-i">Settings</h1>
+			<nav class="local-nav-container selfclear"> 
+				<ul class="nav-menu local-nav selfclear">
+					<li class="nav-item fwb current">
+						<a href="/settings/users/">Users</a>
+					</li>
+					<li class="nav-item fwb">
+						<a href="/settings/roles/">Roles</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
+		<h3>Create New Users</h3>
+		<form class="below48">
+			<fieldset>
+				<div class="row">
+					<div class="col-md-3">
+						<input type="text" class="form-control" placeholder="Full Name">
+					</div>
+					<div class="col-md-3">
+						<input type="email" class="form-control" placeholder="Email Address">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<input type="text" class="form-control" placeholder="Full Name">
+					</div>
+					<div class="col-md-3">
+						<input type="email" class="form-control" placeholder="Email Address">
+					</div>
+				</div>
+				<div class="row below12">
+					<div class="col-md-3">
+						<input type="text" class="form-control" placeholder="Full Name">
+					</div>
+					<div class="col-md-3">
+						<input type="email" class="form-control" placeholder="Email Address">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 alignr">
+						<button class="button btn-primary">Create users</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+
+		<form>
+			<fieldset class="well">
+				<div class="row">
+					<div class="col-md-4 inline-search-wrap">
+						<input type="search" class="form-control form-control-search mar-tb0" placeholder="Name, username or email contains">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Full name</th>
+					<th>Username</th>
+					<th>Email address</th>
+					<th>Last session</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="/settings/users/view/">Larry Olivarez</a></td>
+					<td>larry.olivarez</td>
+					<td>larry.olivarez@ambonare.com</td>
+					<td>01/25/2016 5:40 PM</td>
+					<td class="alignr"><a href="#">Deactivate</a></td>
+				</tr>
+				<tr>
+					<td><a href="/settings/users/view/">Quyen Kieu</a></td>
+					<td>quyen.keiu</td>
+					<td>quyen.keiu@ambonare.com</td>
+					<td>01/25/2016 5:40 PM</td>
+					<td class="alignr"><a href="#" class="disabled text-light-grey">Deactivated</a></td>
+				</tr>
+				<tr>
+					<td><a href="/settings/users/view/">Sirish Potru</a></td>
+					<td>sirish.potru</td>
+					<td>sirish.potru@ambonare.com</td>
+					<td>01/25/2016 5:40 PM</td>
+					<td class="alignr"><a href="#">Deactivated</a></td>
+				</tr>
+					<td><a href="/settings/users/view/">Zak Weiland</a></td>
+					<td>zak.weiland</td>
+					<td>zak.weiland@ambonare.com</td>
+					<td>01/25/2016 5:40 PM</td>
+					<td class="alignr"><a href="#">Deactivated</a></td>
+				</tr>
+				<tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 		</div>

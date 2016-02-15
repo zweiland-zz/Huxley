@@ -85,18 +85,20 @@
 						<li class="nav-item fwb">
 							<a href="/patrons/">Patrons</a>
 						</li>
+						<li class="nav-item fwb">
+							<a href="/reports/">Reports</a>
+						</li>
 					</ul>
 				</nav>
 
 				<nav id="global-utility" class="float-right"> 
-					<ul class="nav-menu">
+					<ul class="nav-menu selfclear">
 						<li class="nav-item fwb nav-has-sub">
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
 									<li><a href="#">Profile</a></li>
-									<li><a href="#">Reports</a></li>
-									<li><a href="#">Settings</a></li>
+									<li><a href="/settings/users/">Settings</a></li>
 									<li><a href="#">Log out</a></li>
 								</ul>
 							</div>
@@ -116,7 +118,7 @@
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
 			<h1 class="inline-block-i">Magazines</h1>
-			<a href="/magazines/add-magazine-title/" class="add-btn button p0">Add magazine title</a>
+			<a href="/magazines/add-magazine-title/" class="add-btn button btn-primary">Add magazine title</a>
 
         	<ul class="local-nav selfclear">
     			<li class="current"><a href="/magazines/">Magazine List</a></li>
@@ -134,36 +136,40 @@
 				<button class="inline export-button float-right">Export</button>
 			</fieldset>
 			<fieldset class="container popup filters" aria-hidden="false">
-				<div class="col-md-2">
-					<h5 class="small-meta fwb">Producer</h5>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						Any
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						Cancel
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						D APH
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						D CMLS
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						D News
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						Free
-					</label>
+                <div class="row filter-list">
+					<div class="col-md-2">
+						<h5 class="small-meta fwb">Producer</h5>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Any
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Cancel
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							D APH
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							D CMLS
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							D News
+						</label>
+						<label class="label-radio">
+							<input type="radio" name="status" class="form-radio">
+							Free
+						</label>
+					</div>
 				</div>
-				<div class="col-md-12 pad-lv3">
-					<a href="#" class="inline-block-i button p0" id="apply-filter">Apply</a>
-					<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+				<div class="row">
+					<div class="col-md-12 pad-lv3">
+						<a href="#" class="inline-block-i button btn-primary" id="apply-filter">Apply</a>
+						<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+					</div>
 				</div>
 			</fieldset>
 		</form>
@@ -219,7 +225,7 @@
 				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
 			</div>
 
-			<div class="container relative below18">
+			<div class="container relative below48">
 				<div class="col-md-2">
 					<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
 						<option selected="selected" value="search-alias=books">Books</option>
@@ -246,17 +252,17 @@
 					<input id="global-search" class="form-control large-control" name="global-search" type="search" tabindex="0" placeholder="Search">
 				</div>
 				<div class="col-md-2">
-					<input class="submit button button-large p0 col-md-12" type="submit" value="Search">
+					<input class="submit button button-large btn-primary col-md-12" type="submit" value="Search">
 					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
 				</div>
-		</div> 
-		<div class="container line below18">
-			<div class="col-m-12 alignc small-meta">
-				<a title="Search Tips">Advanced search keywords</a>
+			</div> 
+			<div class="container line below18">
+				<div class="col-m-12 alignc small-meta">
+					<a title="Search Tips">Advanced search keywords</a>
+				</div>
 			</div>
-		</div>
-	</form>
-</div>
+		</form>
+	</div>
 
 
 <!-- Scripts -->

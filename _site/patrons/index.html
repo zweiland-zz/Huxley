@@ -85,18 +85,20 @@
 						<li class="nav-item fwb">
 							<a href="/patrons/">Patrons</a>
 						</li>
+						<li class="nav-item fwb">
+							<a href="/reports/">Reports</a>
+						</li>
 					</ul>
 				</nav>
 
 				<nav id="global-utility" class="float-right"> 
-					<ul class="nav-menu">
+					<ul class="nav-menu selfclear">
 						<li class="nav-item fwb nav-has-sub">
 							<a href="#">Zak</a>
 							<div class="sub-nav sub-nav-right">
 								<ul class="sub-nav-group">
 									<li><a href="#">Profile</a></li>
-									<li><a href="#">Reports</a></li>
-									<li><a href="#">Settings</a></li>
+									<li><a href="/settings/users/">Settings</a></li>
 									<li><a href="#">Log out</a></li>
 								</ul>
 							</div>
@@ -116,7 +118,7 @@
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
 			<h1 class="inline-block-i">Patrons</h1>
-			<a href="/patrons/create-patron/" class="add-btn button p0">Create patron</a>
+			<a href="/patrons/create-patron/" class="add-btn button btn-primary">Create patron</a>
 		</div>
 		<form class="table-filters">
 			<fieldset>
@@ -125,38 +127,77 @@
 				<button class="inline export-button float-right">Export</button>
 			</fieldset>
 			<fieldset class="container popup filters" aria-hidden="false">
-				<div class="row">
+				<div class="row filter-list">
+					<div class="col-md-2">
+						<h5 class="small-meta fwb">Patron Category</h5>
+						<select class="form-control">
+							<option>Any</option>
+						</select>
+						<h5 class="small-meta fwb">Patron Type</h5>
+						<select class="form-control">
+							<option>Any</option>
+						</select>
+					</div>
 					<div class="col-md-2">
 						<h5 class="small-meta fwb">Status</h5>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Requested
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Master Ordered
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							In Duplication
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Complete
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							In Review
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Master Unavailable
-						</label>
+						<select class="form-control">
+							<option>Any</option>
+						</select>
+						<h5 class="small-meta fwb">Reasons</h5>
+						<select class="form-control">
+							<option>Any</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<h5 class="small-meta fwb">Gender</h5>
+						<select class="form-control">
+							<option>Any</option>
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+						<h5 class="small-meta fwb">Age</h5>
+						<select class="form-control">
+							<option>Any</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<h5 class="small-meta fwb">Language</h5>
+						<select class="form-control">
+							<option>Any</option>
+							<option>English</option>
+							<option>Spanish</option>
+						</select>
+						<h5 class="small-meta fwb">Disability</h5>
+						<select class="form-control">
+							<option>Any</option>
+							<option>Blind</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+	                    <h5 class="small-meta fwb">Machines Assignment</h5>
+	                    <label class="label-radio">
+	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                        CBM
+	                    </label>
+	                    <label class="label-radio">
+	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                        TDBM
+	                    </label>
+	                    <label class="label-radio">
+	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                        TBM
+	                    </label>
+	                    <label class="label-radio">
+	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                        CO
+	                    </label>
 					</div>
 				</div>
-				<div class="col-md-12 pad-lv3">
-					<a href="#" class="inline-block-i button p0" id="apply-filter">Apply</a>
-					<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+				<div class="row">
+					<div class="col-md-12 pad-lv3">
+						<a href="#" class="inline-block-i button btn-primary" id="apply-filter">Apply</a>
+						<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+					</div>
 				</div>
 			</fieldset>
 		</form>
@@ -196,7 +237,7 @@
 				</tr>
 				<tr>
 					<td>234322</td>
-					<td><a href="/patrons/patron-detail.html">John Patron</a></td>
+					<td><a href="/patrons/patron-detail.html">Dr. John Patron</a></td>
 					<td>Individual</td>
 					<td>Active</td>
 					<td>04/07/2016</td>
@@ -272,7 +313,7 @@
 				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
 			</div>
 
-			<div class="container relative below18">
+			<div class="container relative below48">
 				<div class="col-md-2">
 					<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
 						<option selected="selected" value="search-alias=books">Books</option>
@@ -299,17 +340,17 @@
 					<input id="global-search" class="form-control large-control" name="global-search" type="search" tabindex="0" placeholder="Search">
 				</div>
 				<div class="col-md-2">
-					<input class="submit button button-large p0 col-md-12" type="submit" value="Search">
+					<input class="submit button button-large btn-primary col-md-12" type="submit" value="Search">
 					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
 				</div>
-		</div> 
-		<div class="container line below18">
-			<div class="col-m-12 alignc small-meta">
-				<a title="Search Tips">Advanced search keywords</a>
+			</div> 
+			<div class="container line below18">
+				<div class="col-m-12 alignc small-meta">
+					<a title="Search Tips">Advanced search keywords</a>
+				</div>
 			</div>
-		</div>
-	</form>
-</div>
+		</form>
+	</div>
 
 
 <!-- Scripts -->
