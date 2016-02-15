@@ -150,7 +150,7 @@ a, span {
     line-height: inherit;
 }
 
-#content a.button {
+#content a.btn {
     text-decoration: none; 
 }
 
@@ -378,7 +378,7 @@ table tbody tr:hover {
 
 /* Buttons */
 
-button, .button-large, .button {
+button, .btn-large, .btn {
     background: #EEEEEE;
     color: #000;
     position: relative;
@@ -403,12 +403,12 @@ button, .button-large, .button {
     vertical-align: top;
 }
 
-button:hover, .button:hover, .button:focus {
+button:hover, .btn:hover, .btn:focus {
     background-color: #BFBFBF;
     color: #000;
 }
 
-button:active, .button:active {
+button:active, .btn:active {
     top: 2px;
 }
 
@@ -417,12 +417,12 @@ button:active, .button:active {
     color: white;
 }
 
-.btn-primary:hover, .button.btn-primary:focus {
+.btn-primary:hover, .btn.btn-primary:focus {
     background-color: #003C6F;
     color: white;
 }
 
-.button-large {
+.btn-large {
     font-size: 1.25em;
 }
 
@@ -445,7 +445,7 @@ button:active, .button:active {
 table .combo-button {
     
 }
-table .button {
+table .btn {
     padding-top: 5px;
     padding-bottom: 3px;
 }
@@ -554,7 +554,7 @@ input.disabled {
     padding-right: 20%;
 }
 
-.form-inline.with-button [class*="button"] {
+.form-inline.with-button [class*="btn"] {
     margin: 0;
     position: absolute;
     right: 2px;
