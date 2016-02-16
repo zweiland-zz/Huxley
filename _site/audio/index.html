@@ -114,367 +114,363 @@
 
 	<div class="wrap">
 		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
-			<div class="col-md-12">
-	<div role="main" id="content" class="content selfclear relative">
-		<div class="header">
-			<h1 class="inline-block-i">Audio</h1>
-        	<ul class="local-nav selfclear">
-    			<li class="current"><a href="#">Duplication</a></li>
-    			<li><a href="#">Digitization</a></li>
-    			<li><a href="/audio/studio-operations.html">Studio Operations</a></li>
-    			<li><a href="#">Shelving</a></li>
-           </ul>
-		</div>
-
-		<h3>Duplication</h3>
-
-		<form class="table-filters well">
-			<fieldset>
-				<button class="inline filter-button">Filters</button>
-				<div class="inline-search-wrap">
-					<input class="form-control" type="text" placeholder="Search title or code">
-				</div>
-				<button class="inline export-button float-right">Export</button>
-			</fieldset>
-			<fieldset class="container popup filters" aria-hidden="false">
-                <div class="row filter-list">
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Status</h5>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Requested
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Master Ordered
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							In Duplication
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Complete
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							In Review
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="status" class="form-radio">
-							Master Unavailable
-						</label>
-					</div>
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Staff Member</h5>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Miles Lewis
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Craig York
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Zak Weiland
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Larry Olivarez
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Quyen Kieu
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="staff-member" class="form-radio">
-							Sirish Potru
-						</label>
-					</div>
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Book or Magazine</h5>
-						<label class="label-radio">
-							<input type="radio" name="book-mag" class="form-radio">
-							Book
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="book-mag" class="form-radio">
-							Magazine
-						</label>
-					</div>
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Request Type</h5>
-						<label class="label-radio">
-							<input type="radio" name="request-type" class="form-radio">
-							New Book
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="request-type" class="form-radio">
-							Add New Rush
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="request-type" class="form-radio">
-							Request Type
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="request-type" class="form-radio">
-							Request Type
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="request-type" class="form-radio">
-							Request Type
-						</label>
-					</div>
-					<div class="col-md-2">
-						<h5 class="small-meta fwb">Format</h5>
-						<label class="label-radio">
-							<input type="radio" name="format" class="form-radio">
-							Cassette
-						</label>
-						<label class="label-radio">
-							<input type="radio" name="format" class="form-radio">
-							Digital Flash
-						</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 pad-lv3">
-						<a href="#" class="inline-block-i btn btn-primary" id="apply-filter">Apply</a>
-						<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
-					</div>
-				</div>
-			</fieldset>
-		</form>
-
-		<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
-			<div class="col-md-12">
-		        <div class="media">
-		            <div class="media-image">
-		                <a href="#" class="one-liner reset-filter">Reset</span></a>
-		            </div>
-		            <div class="media-body">
-		                <p class="one-liner">
-		                	<strong>Filtered By:</strong> <span>Status: Complete</span>
-		                </p>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Weight</th>
-					<th class="th-title">Title</th>
-					<th>Book / Mag</th>
-					<th>Copies</th>
-					<th>Request Type</th>
-					<th>Requested</th>
-					<th>Status</th>
-					<th>Staff</th>
-					<th><!-- ACTION --></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>2100</td>
-					<td><a href="#">BLEITHDALE ROMANCE</a></td>
-					<td><a href="#">XXP 44891</a></td>
-					<td>4</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>slewis</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>1100</td>
-					<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
-					<td><a href="#">BR 17604</a></td>
-					<td>10</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>Unassigned</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>160</td>
-					<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
-					<td><a href="#">BR 17606</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>slewis</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>100</td>
-					<td><a href="#">BLEITHDALE ROMANCE</a></td>
-					<td><a href="#">XXP 44891</a></td>
-					<td>4</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>cyork</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>100</td>
-					<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
-					<td><a href="#">BR 17604</a></td>
-					<td>10</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>Unassigned</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
-					<td><a href="#">BR 17606</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Requested</td>
-					<td>cyork</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">STAND TALL, ABE LINCOLN</a></td>
-					<td><a href="#">LBP 17603</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Review</td>
-					<td>Unsassigned</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>100</td>
-					<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
-					<td><a href="#">BR 17604</a></td>
-					<td>10</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Duplication</td>
-					<td>Unassigned</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
-					<td><a href="#">BR 17606</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Complete</td>
-					<td>slewis</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
-					<td><a href="#">BR 17607</a></td>
-					<td>22</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Duplication</td>
-					<td>Unsassigned</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
-					<td><a href="#">BR 17606</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Complete</td>
-					<td>slewis</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
-					<td><a href="#">BR 17607</a></td>
-					<td>22</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Duplication</td>
-					<td>Unsassigned</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
-					<td><a href="#">BR 17606</a></td>
-					<td>2</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>Complete</td>
-					<td>slewis</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
-					<td><a href="#">BR 17607</a></td>
-					<td>22</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Duplication</td>
-					<td>Unsassigned</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>60</td>
-					<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
-					<td><a href="#">BR 17607</a></td>
-					<td>22</td>
-					<td>New Book</td>
-					<td>02/19/2016</td>
-					<td>In Duplication</td>
-					<td>Unsassigned</td>
-					<td>
-						<div class="combo-button">
-							<a href="#" class="btn">View</a>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+			<div role="main" id="content" class="content selfclear relative">
+	<div class="header">
+		<h1 class="inline-block-i">Audio</h1>
+    	<ul class="local-nav selfclear">
+			<li class="current"><a href="#">Duplication</a></li>
+			<li><a href="#">Digitization</a></li>
+			<li><a href="/audio/studio-operations.html">Studio Operations</a></li>
+			<li><a href="#">Shelving</a></li>
+       </ul>
 	</div>
-</div>
-</div>
+
+	<h3>Duplication</h3>
+
+	<form class="table-filters well">
+		<fieldset>
+			<button class="inline filter-button">Filters</button>
+			<div class="inline-search-wrap">
+				<input class="form-control" type="text" placeholder="Search title or code">
+			</div>
+			<button class="inline export-button float-right">Export</button>
+		</fieldset>
+		<fieldset class="container popup filters" aria-hidden="false">
+            <div class="row filter-list">
+				<div class="col-md-2">
+					<h5 class="small-meta fwb">Status</h5>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						Requested
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						Master Ordered
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						In Duplication
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						Complete
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						In Review
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="status" class="form-radio">
+						Master Unavailable
+					</label>
+				</div>
+				<div class="col-md-2">
+					<h5 class="small-meta fwb">Staff Member</h5>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Miles Lewis
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Craig York
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Zak Weiland
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Larry Olivarez
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Quyen Kieu
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="staff-member" class="form-radio">
+						Sirish Potru
+					</label>
+				</div>
+				<div class="col-md-2">
+					<h5 class="small-meta fwb">Book or Magazine</h5>
+					<label class="label-radio">
+						<input type="radio" name="book-mag" class="form-radio">
+						Book
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="book-mag" class="form-radio">
+						Magazine
+					</label>
+				</div>
+				<div class="col-md-2">
+					<h5 class="small-meta fwb">Request Type</h5>
+					<label class="label-radio">
+						<input type="radio" name="request-type" class="form-radio">
+						New Book
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="request-type" class="form-radio">
+						Add New Rush
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="request-type" class="form-radio">
+						Request Type
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="request-type" class="form-radio">
+						Request Type
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="request-type" class="form-radio">
+						Request Type
+					</label>
+				</div>
+				<div class="col-md-2">
+					<h5 class="small-meta fwb">Format</h5>
+					<label class="label-radio">
+						<input type="radio" name="format" class="form-radio">
+						Cassette
+					</label>
+					<label class="label-radio">
+						<input type="radio" name="format" class="form-radio">
+						Digital Flash
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 pad-lv3">
+					<a href="#" class="inline-block-i btn btn-primary" id="apply-filter">Apply</a>
+					<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+	<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
+		<div class="col-md-12">
+	        <div class="media">
+	            <div class="media-image">
+	                <a href="#" class="one-liner reset-filter">Reset</span></a>
+	            </div>
+	            <div class="media-body">
+	                <p class="one-liner">
+	                	<strong>Filtered By:</strong> <span>Status: Complete</span>
+	                </p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Weight</th>
+				<th class="th-title">Title</th>
+				<th>Book / Mag</th>
+				<th>Copies</th>
+				<th>Request Type</th>
+				<th>Requested</th>
+				<th>Status</th>
+				<th>Staff</th>
+				<th><!-- ACTION --></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2100</td>
+				<td><a href="#">BLEITHDALE ROMANCE</a></td>
+				<td><a href="#">XXP 44891</a></td>
+				<td>4</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>slewis</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>1100</td>
+				<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
+				<td><a href="#">BR 17604</a></td>
+				<td>10</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>Unassigned</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>160</td>
+				<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
+				<td><a href="#">BR 17606</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>slewis</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td><a href="#">BLEITHDALE ROMANCE</a></td>
+				<td><a href="#">XXP 44891</a></td>
+				<td>4</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>cyork</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
+				<td><a href="#">BR 17604</a></td>
+				<td>10</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>Unassigned</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
+				<td><a href="#">BR 17606</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Requested</td>
+				<td>cyork</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">STAND TALL, ABE LINCOLN</a></td>
+				<td><a href="#">LBP 17603</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Review</td>
+				<td>Unsassigned</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td><a href="#">WINTER KNIGHTS: THE EDGE CHRONICLES, BOOK 8</a></td>
+				<td><a href="#">BR 17604</a></td>
+				<td>10</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Duplication</td>
+				<td>Unassigned</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
+				<td><a href="#">BR 17606</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Complete</td>
+				<td>slewis</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
+				<td><a href="#">BR 17607</a></td>
+				<td>22</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Duplication</td>
+				<td>Unsassigned</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
+				<td><a href="#">BR 17606</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Complete</td>
+				<td>slewis</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
+				<td><a href="#">BR 17607</a></td>
+				<td>22</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Duplication</td>
+				<td>Unsassigned</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">BALANCE: IN SEARCH OF THE LOST SENSE</a></td>
+				<td><a href="#">BR 17606</a></td>
+				<td>2</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>Complete</td>
+				<td>slewis</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
+				<td><a href="#">BR 17607</a></td>
+				<td>22</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Duplication</td>
+				<td>Unsassigned</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td><a href="#">UPPER CRUSTS: FABULOUS WAYS TO USE BREAD; DELECTABLE RECIPES FOR</a></td>
+				<td><a href="#">BR 17607</a></td>
+				<td>22</td>
+				<td>New Book</td>
+				<td>02/19/2016</td>
+				<td>In Duplication</td>
+				<td>Unsassigned</td>
+				<td>
+					<div class="combo-button">
+						<a href="#" class="btn">View</a>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 		</div>
 	</div>

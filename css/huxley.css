@@ -708,7 +708,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 .local-nav > li > .sub-nav {
     border-radius: 0 0 6px 6px;
-    margin-top: -4px;
+    margin-top: -16px;
 }
     
 
@@ -1013,14 +1013,14 @@ clear: both;
 
 #global-breadcrumb {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 1em auto 0;
     z-index: 50;
     float: none;
 }
 #global-breadcrumb ol {
     width: 100%;
     margin: 0;
-    padding: 0.75em 0;
+    padding: 0;
 }
 #global-breadcrumb ol li {
     font-family: Arial, sans-serif;

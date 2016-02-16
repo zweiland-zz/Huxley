@@ -3,121 +3,119 @@ layout: default
 title: Studio Operations | Audio
 ---
 
-<div class="col-md-12">
-	<div role="main" id="content" class="content selfclear relative">
-		<div class="header">
-			<h1 class="inline-block-i">Audio</h1>
-        	<ul class="local-nav selfclear">
-    			<li><a href="/audio/">Duplication</a></li>
-    			<li><a href="#">Digitization</a></li>
-    			<li class="current"><a href="/audio/studio-operations.html">Studio Operations</a></li>
-    			<li><a href="#">Shelving</a></li>
-           </ul>
-		</div>
-
-		<h3>Studio Operations</h3>
-
-		<form class="table-filters">
-			<fieldset class="well">
-				<button class="inline filter-button">Filters</button>
-				<div class="inline-search-wrap">
-					<input class="form-control" type="text" placeholder="Search title or code">
-				</div>
-				<button class="inline export-button float-right">Export</button>
-			</fieldset>
-			<fieldset class="container popup filters" aria-hidden="false">
-				<div class="col-md-3">
-					<h5 class="small-meta fwb">Status</h5>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						In Recording (Midland)
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						In Recording (TSL)
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						Sent to Studio
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="status" class="form-radio">
-						Recording Complete
-					</label>
-				</div>
-				<div class="col-md-2">
-					<h5 class="small-meta fwb">Studio</h5>
-					<label class="label-radio">
-						<input type="radio" name="staff-member" class="form-radio">
-						Midland
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="staff-member" class="form-radio">
-						TSLAC
-					</label>
-				</div>
-
-				<div class="col-md-2">
-					<h5 class="small-meta fwb">Book or Magazine</h5>
-					<label class="label-radio">
-						<input type="radio" name="book-mag" class="form-radio">
-						Book
-					</label>
-					<label class="label-radio">
-						<input type="radio" name="book-mag" class="form-radio">
-						Magazine
-					</label>
-				</div>
-
-				<div class="col-md-12 pad-lv3">
-					<a href="#" class="inline-block-i btn btn-primary" id="apply-filter">Apply</a>
-					<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
-				</div>
-			</fieldset>
-		</form>
-
-		<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
-			<div class="col-md-12">
-		        <div class="media">
-		            <div class="media-image">
-		                <a href="#" class="one-liner reset-filter">Reset</span></a>
-		            </div>
-		            <div class="media-body">
-		                <p class="one-liner">
-		                	<strong>Filtered By:</strong> <span>Status: Complete</span>
-		                </p>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
-		<table>
-			<thead>
-				<tr>
-					<th class="th-title">Title</th>
-					<th>Book / Mag</th>
-					<th>Status</th>
-					<th>Studio</th>
-					<th class="td-data">Requests</th>
-					<th class="td-data">Series</th>
-					<th class="td-data">Reserves</th>
-					<th class="td-data">Date</th>
-					<th class="td-data"><!-- ACTION --></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#">BLEITHDALE ROMANCE</a></td>
-					<td><a href="#">XXP 44891</a></td>
-					<td>In Recording (Midland)</td>
-					<td>Midland</td>
-					<td class="td-data">24</td>
-					<td class="td-data">No</td>
-					<td class="td-data">20</td>
-					<td class="td-data">03/15/2016</td>
-					<td class="td-data"><a href="#">View</a></td>
-				</tr>
-			</tbody>
-		</table>
+<div role="main" id="content" class="content selfclear relative">
+	<div class="header">
+		<h1 class="inline-block-i">Audio</h1>
+    	<ul class="local-nav selfclear">
+			<li><a href="/audio/">Duplication</a></li>
+			<li><a href="#">Digitization</a></li>
+			<li class="current"><a href="/audio/studio-operations.html">Studio Operations</a></li>
+			<li><a href="#">Shelving</a></li>
+       </ul>
 	</div>
+
+	<h3>Studio Operations</h3>
+
+	<form class="table-filters">
+		<fieldset class="well">
+			<button class="inline filter-button">Filters</button>
+			<div class="inline-search-wrap">
+				<input class="form-control" type="text" placeholder="Search title or code">
+			</div>
+			<button class="inline export-button float-right">Export</button>
+		</fieldset>
+		<fieldset class="container popup filters" aria-hidden="false">
+			<div class="col-md-3">
+				<h5 class="small-meta fwb">Status</h5>
+				<label class="label-radio">
+					<input type="radio" name="status" class="form-radio">
+					In Recording (Midland)
+				</label>
+				<label class="label-radio">
+					<input type="radio" name="status" class="form-radio">
+					In Recording (TSL)
+				</label>
+				<label class="label-radio">
+					<input type="radio" name="status" class="form-radio">
+					Sent to Studio
+				</label>
+				<label class="label-radio">
+					<input type="radio" name="status" class="form-radio">
+					Recording Complete
+				</label>
+			</div>
+			<div class="col-md-2">
+				<h5 class="small-meta fwb">Studio</h5>
+				<label class="label-radio">
+					<input type="radio" name="staff-member" class="form-radio">
+					Midland
+				</label>
+				<label class="label-radio">
+					<input type="radio" name="staff-member" class="form-radio">
+					TSLAC
+				</label>
+			</div>
+
+			<div class="col-md-2">
+				<h5 class="small-meta fwb">Book or Magazine</h5>
+				<label class="label-radio">
+					<input type="radio" name="book-mag" class="form-radio">
+					Book
+				</label>
+				<label class="label-radio">
+					<input type="radio" name="book-mag" class="form-radio">
+					Magazine
+				</label>
+			</div>
+
+			<div class="col-md-12 pad-lv3">
+				<a href="#" class="inline-block-i btn btn-primary" id="apply-filter">Apply</a>
+				<a href="#" class="inline-block-i pad-lv1 reset-filter" id="reset-filter">Reset</a>
+			</div>
+		</fieldset>
+	</form>
+
+	<div class="feedback-block info mar-lv3 mar-lr0 mar-b0" style="display:none;">
+		<div class="col-md-12">
+	        <div class="media">
+	            <div class="media-image">
+	                <a href="#" class="one-liner reset-filter">Reset</span></a>
+	            </div>
+	            <div class="media-body">
+	                <p class="one-liner">
+	                	<strong>Filtered By:</strong> <span>Status: Complete</span>
+	                </p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th class="th-title">Title</th>
+				<th>Book / Mag</th>
+				<th>Status</th>
+				<th>Studio</th>
+				<th class="td-data">Requests</th>
+				<th class="td-data">Series</th>
+				<th class="td-data">Reserves</th>
+				<th class="td-data">Date</th>
+				<th class="td-data"><!-- ACTION --></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="#">BLEITHDALE ROMANCE</a></td>
+				<td><a href="#">XXP 44891</a></td>
+				<td>In Recording (Midland)</td>
+				<td>Midland</td>
+				<td class="td-data">24</td>
+				<td class="td-data">No</td>
+				<td class="td-data">20</td>
+				<td class="td-data">03/15/2016</td>
+				<td class="td-data"><a href="#">View</a></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
