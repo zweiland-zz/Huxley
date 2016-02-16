@@ -376,6 +376,7 @@ table tbody tr:hover {
 }
 
 
+
 /* Buttons */
 
 button, .btn-large, .btn {
@@ -417,7 +418,8 @@ button:active, .btn:active {
     color: white;
 }
 
-.btn-primary:hover, .btn.btn-primary:focus {
+.btn-primary:hover, 
+.btn.btn-primary:focus {
     background-color: #003C6F;
     color: white;
 }
@@ -440,14 +442,6 @@ button:active, .btn:active {
     float: right;
     display: inline-block;
     margin: 6px 0 0 15px;
-}
-
-table .combo-button {
-    
-}
-table .btn {
-    padding-top: 5px;
-    padding-bottom: 3px;
 }
 
 
