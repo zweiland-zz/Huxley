@@ -1,5 +1,5 @@
 ---
-layout: elements
+layout: patterns
 title: Forms
 ---
 
@@ -16,104 +16,97 @@ title: Forms
       <h1>Forms</h1>
    </header>
 
+   <nav class="local-nav-container selfclear below48"> 
+      <ul class="nav-menu local-nav selfclear">
+         <li class="nav-item fwb">
+            <a href="#buttons">Buttons</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#selects">Selects</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#text-input">Inputs</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#field-helps">Field Helps</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#radio">Checkboxes &amp; Radios</a>
+         </li>
+      </ul>
+   </nav>
 
-                     <div class="line local-nav-container">
-                        <div class="lastUnit size1of1">
-                           <p class="mobile-top-nav nomargin full-width fwb"> 
-                              <a href="#">Navigation</a> 
-                           </p>
-                           <ul class="local-nav selfclear">
-                              <li>
-                                 <a href="#buttons">Buttons</a>
-                              </li>
-                              <li>
-                                 <a href="#selects">Selects</a>
-                              </li>
-                              <li>
-                                 <a href="#text-input">Inputs</a>
-                              </li>
-                              <li>
-                                 <a href="#field-helps">Field Helps</a>
-                              </li>
-                              <li>
-                                 <a href="#radio">Checkboxes &amp; Radios</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div id="btns" class="line below48">
-                        <div class="lastUnit size1of1">
-                           <h3>Buttons</h3>
-                           <div class="example">
-                              <div class="line">
-                                 <button class="btn btn-primary">Primary</button>
-                                 <button class="btn">Standard</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="btns-anchor-input" class="line below48">
-                     	<div class="lastUnit size1of1">
-	                        <h3>Anchor and input buttons</h3>
-	                        <div class="example">
-                        		<a class="btn">Anchor Button</a>
-                        		<input type="btn" value="Input Button" class="btn btn-primary">
-	                        </div>
-	                    </div>
-                     </div>
-                     <div id="selects" class="lastUnit size1of1">
-                        <h3>Selects</h3>
-                        <div class="example">
-                        	<select class="form-control auto-width nomargin"> 
-                        		<option value="">Select an option</option> 
-                        		<option value="1">option 1</option> 
-                        		<option value="2">option 2</option> 
-                        		<option value="3">option 3</option> 
-                        	</select>
-                        </div>
-                     </div>
-                     <div id="text-input" class="lastUnit size1of1">
-                        <h3>Text inputs</h3>
-                        <div class="example">
-                           <div class="line">
-	                       	<fieldset>
-	                       		<legend>Personal information</legend>
-	                       		<label>First name</label>
-	                       		<input type="text" placeholder="e.g. Zak Weiland" class="form-control">
-	                       	</fieldset>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="text-input-button" class="lastUnit size1of1">
-                        <h3>Text input with btn attached</h3>
-                        <div class="example">
-                        		<div class="field-wrapper form-inline with-button">
-                        			<input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
-                        			<a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
-                        		</div>
-                        </div>
-                     </div>
-
-                     <div id="text-input-button" class="lastUnit size1of1">
-                        <h3>Search</h3>
-                        <div class="example">
-                           <div class="line">
-                              <div class="field-wrapper form-inline with-button">
-                                 <input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
-                                 <select class="form-control auto-width nomargin">
-                                    <option value="">Keyword</option>
-                                    <option value="1">Title</option>
-                                    <option value="2">Author</option>
-                                 </select>
-                                 <a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <div id="btns" class="below48">
+      <div class="lastUnit size1of1">
+         <h3>Buttons</h3>
+         <div class="example">
+            <div class="line">
+               <button class="btn btn-primary">Primary</button>
+               <button class="btn">Standard</button>
             </div>
          </div>
       </div>
-</body>
-</html>
+   </div>
+
+   <div id="btns-anchor-input" class="below48">
+   	<div class="lastUnit size1of1">
+         <h3>Anchor and input buttons</h3>
+         <div class="example">
+      		<a class="btn">Anchor Button</a>
+      		<input type="button" value="Input Button" class="btn btn-primary">
+         </div>
+     </div>
+   </div>
+
+   <div id="selects" class="below48">
+      <h3>Selects</h3>
+      <div class="example">
+      	<select class="form-control auto-width nomargin"> 
+      		<option value="">Select an option</option> 
+      		<option value="1">option 1</option> 
+      		<option value="2">option 2</option> 
+      		<option value="3">option 3</option> 
+      	</select>
+      </div>
+   </div>
+
+   <div id="text-input" class="below48">
+      <h3>Text inputs</h3>
+      <div class="example">
+         <div class="line">
+        	<fieldset>
+        		<legend>Personal information</legend>
+        		<label>First name</label>
+        		<input type="text" placeholder="e.g. Zak Weiland" class="form-control">
+        	</fieldset>
+         </div>
+      </div>
+   </div>
+
+   <div id="text-input-button" class="below48">
+      <h3>Text input with btn attached</h3>
+      <div class="example">
+      		<div class="field-wrapper form-inline with-button">
+      			<input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
+      			<a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
+      		</div>
+      </div>
+   </div>
+
+   <div id="text-input-button" class="below48">
+      <h3>Search</h3>
+      <div class="example">
+         <div class="line">
+            <div class="field-wrapper form-inline with-button">
+               <input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
+               <select class="form-control auto-width nomargin">
+                  <option value="">Keyword</option>
+                  <option value="1">Title</option>
+                  <option value="2">Author</option>
+               </select>
+               <a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

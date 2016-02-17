@@ -104,7 +104,7 @@ a {
 a:hover {
     color: #00325c;
 }
-a:focus {
+a:active, a:focus {
 	background-color: #FFBF47;
 	outline: 3px solid #FFBF47;
 }
@@ -669,13 +669,12 @@ input.disabled {
 .form-inline.with-button [class*="btn"] {
     margin: 0;
     position: absolute;
-    right: 2px;
+    top: 0px; right: 0;
     z-index: 2;
-    border-radius: 0 1px 1px 0;
-    height: 36px;
-    line-height: 36px;
-    top: 2px;
-    padding: 0 18px;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
     text-decoration: none;
 }
 
@@ -888,7 +887,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 #global-header .search-toggle, 
 #global-header .nav-item > a.search-toggle:focus {
     display: block;
-    color: #000;
+    color: #000000;
     background-image: url(../img/search-button.png);
     background-repeat: no-repeat;
     background-position: 7.5px 46%;
@@ -928,8 +927,8 @@ input[type="search"].form-control-search { padding-right: 30px; }
 	float: left;
 	width: 90px;
 	height: 35px;
-	background: #fff;
-	color: #000;
+	background: #FFFFFF;
+	color: #000000;
 	font-family: Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
@@ -943,7 +942,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
     -webkit-appearance: none;
   	-webkit-border-radius: 0px;
   	border: 0 none;
-  	border-right:1px solid #000;
+  	border-right:1px solid #000000;
 }
 #global-header form#search select.site-search-dropdown option {
 	background: blue;
@@ -1057,7 +1056,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 #global-header .nav-item > a:hover,
 #global-header .nav-item > a:focus,
 #global-header .nav-item > a.open {
-    background-color: #fff;
+    background-color: #BFBFBF;
     color: black;
 }
 .nav-item > a.open {
@@ -1121,7 +1120,8 @@ input[type="search"].form-control-search { padding-right: 30px; }
 	color: #000;
 }
 
-.sub-nav li a:active, .sub-nav li a:focus {
+.sub-nav li a:active, 
+.sub-nav li a:focus {
     background: #FFBF47;
 }
 
