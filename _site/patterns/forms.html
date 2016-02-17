@@ -1,95 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Form Elements | Huxley | by Ambonare</title>
-<meta charset="utf-8">
-<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/favicons//ms-icon-144x144.png">
-<meta content="img/favicons/favicon.ico">
-<link rel="stylesheet" type="text/css" href="../css/patterns.css">
-<link rel="stylesheet" type="text/css" href="../css/huxley.css">
-<body>
-   <header role="banner" id="global-header" class="">
-      <div class="header-wrapper">
-         <div class="header-global wrap">
-            <div class="header-logo">
-               <a href="huxley.html" title="Go to the Huxley homepage" id="logo" class="content">HUXLEY</a>
-            </div>
+<div id="global-breadcrumb" class="header-context group">
+   <ol role="breadcrumbs" class="group">
+      <li><a href="/patterns/">Huxley elements</a></li>
+      <li><a href="/patterns/forms.html">Forms</a></li>
+   </ol>
+</div>
 
-            <nav id="global-nav" class="float-left">
-               <ul class="nav-menu">
-                      <li class="nav-item fwb">
-                     <a href="index.html">Patterns</a>
-                     </li>
-                     <li class="nav-item fwb">
-                     <a href="about.html">About</a>
-                     </li>
-                  <ul>
-              </nav>
-         </div>
-      </div>
+<div id="content" class="main-content selfclear">
+   <header class="header">
+      <h1>Forms</h1>
    </header>
-      <div class="wrap">
-         <div id="main-content" class="main-content mc-content selfclear larger-mc-content">
-            <div class="line">
-               <div class="unit size1of4 pad-lv6 pad-lr0 hide-phone">
-                  <ul class="regular pad-lv3">
-                     <li> 
-                        <a href="/" title="Grid System"> 
-                        <span class="nav-label">Grid System</span> 
-                        </a>
-                     </li>
-                     <li>
-                        <a href="typography.html" title="Typography"> 
-                        <span class="nav-label">Typography</span> 
-                        </a>
-                     </li>
-                     <li class="selected">
-                        <a href="forms.html" title="Form Elements"> 
-                        <span class="nav-label">Form Elements</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="navigation.html" title="Navigation"> 
-                        <span class="nav-label">Navigation</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="tables.html" title="Tables"> 
-                        <span class="nav-label">Tables</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="lists.html" title="Lists"> 
-                        <span class="nav-label">Lists</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="feedback.html" title="Feedback"> 
-                        <span class="nav-label">Feedback</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="dialogs.html" title="Dialogs"> 
-                        <span class="nav-label">Dialogs</span> 
-                        </a> 
-                     </li>
-                     <li> 
-                        <a href="helpers.html" title="Helper Classes"> 
-                        <span class="nav-label">Helper Classes</span> 
-                        </a> 
-                     </li>
-                  </ul>
-               </div>
-               <div class="lastUnit size3of4">
-                  <div role="main" id="content" class="content selfclear relative">
-                     <div class="lastUnit size1of1 header">
-                        <h1>Form Elements</h1>
-                     </div>
+
+
                      <div class="line local-nav-container">
                         <div class="lastUnit size1of1">
                            <p class="mobile-top-nav nomargin full-width fwb"> 
@@ -129,24 +50,20 @@
                      	<div class="lastUnit size1of1">
 	                        <h3>Anchor and input buttons</h3>
 	                        <div class="example">
-	                           <div class="line">
-	                           		<a class="btn">Anchor Button</a>
-	                           		<input type="btn" value="Input Button" class="btn btn-primary">
-	                           </div>
+                        		<a class="btn">Anchor Button</a>
+                        		<input type="btn" value="Input Button" class="btn btn-primary">
 	                        </div>
 	                    </div>
                      </div>
                      <div id="selects" class="lastUnit size1of1">
                         <h3>Selects</h3>
                         <div class="example">
-                           <div class="line">
-                           	<select class="auto-width nomargin"> 
-                           		<option value="">Select an option</option> 
-                           		<option value="1">option 1</option> 
-                           		<option value="2">option 2</option> 
-                           		<option value="3">option 3</option> 
-                           	</select>
-                           </div>
+                        	<select class="form-control auto-width nomargin"> 
+                        		<option value="">Select an option</option> 
+                        		<option value="1">option 1</option> 
+                        		<option value="2">option 2</option> 
+                        		<option value="3">option 3</option> 
+                        	</select>
                         </div>
                      </div>
                      <div id="text-input" class="lastUnit size1of1">
@@ -156,7 +73,7 @@
 	                       	<fieldset>
 	                       		<legend>Personal information</legend>
 	                       		<label>First name</label>
-	                       		<input type="text" placeholder="e.g. Zak Weiland" class="text">
+	                       		<input type="text" placeholder="e.g. Zak Weiland" class="form-control">
 	                       	</fieldset>
                            </div>
                         </div>
@@ -164,12 +81,10 @@
                      <div id="text-input-button" class="lastUnit size1of1">
                         <h3>Text input with btn attached</h3>
                         <div class="example">
-                        	<div class="line">
                         		<div class="field-wrapper form-inline with-button">
-                        			<input type="text" name="inputandbutton" placeholder="I'm an input" class="av-text" id="inputandbutton">
+                        			<input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
                         			<a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
                         		</div>
-                           </div>
                         </div>
                      </div>
 
@@ -178,13 +93,11 @@
                         <div class="example">
                            <div class="line">
                               <div class="field-wrapper form-inline with-button">
-                                 <input type="text" name="inputandbutton" placeholder="I'm an input" class="av-text" id="inputandbutton">
-                                 <select class="auto-width nomargin">
+                                 <input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
+                                 <select class="form-control auto-width nomargin">
                                     <option value="">Keyword</option>
                                     <option value="1">Title</option>
                                     <option value="2">Author</option>
-                                    <option value="3">Book Number / Magazine Code</option>
-                                    <option value="3">Book Number / Magazine Code</option>
                                  </select>
                                  <a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
                               </div>

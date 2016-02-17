@@ -1,199 +1,155 @@
-
 <!DOCTYPE html>
-<html> 
-<head> 
-<title>Patterns | Huxley | by Ambonare</title>
-<meta charset="utf-8">
-<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved."> 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-<meta name="apple-mobile-web-app-capable" content="yes"> 
-<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/favicons//ms-icon-144x144.png">
-<meta content="img/favicons/favicon.ico">
-<link rel="stylesheet" type="text/css" href="../css/patterns.css">
-<link rel="stylesheet" type="text/css" href="../../css/huxley.css">
+<html>
+<head>
+	<title> Huxley UX Patterns</title>
+	<meta charset="utf-8">
+	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="img/favicons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/patterns.css">
+	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
+</head>
 <body>
+
+	<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+	<div id="skiplink-container">
+		<div>
+			<a href="#content" class="skiplink">Skip to main content</a>
+		</div>
+	</div>
+
 	<header role="banner" id="global-header" class="">
 		<div class="header-wrapper">
-			<div class="header-global wrap">
+			<div class="header-global">
 				<div class="header-logo">
-					<a href="/" title="Go to the Huxley homepage" id="logo" class="content">HUXLEY</a>
+					<a href="/" title="Go to Dashboard" id="logo" class="content">
+						<img src="/img/huxley-logo.png" alt="Go to Dashboard" />
+					</a>
 				</div>
 
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
-		                <li class="nav-item fwb">
-							<a href="index.html">Patterns</a>
-		            	</li>
-		            	<li class="nav-item fwb">
-							<a href="about.html">About</a>
-		            	</li>
-		           	<ul>
-		        </nav>
-			</div>
+						<li class="nav-item fwb">
+							<a href="/patterns/">Patterns</a>
+						</li>
+						<li class="nav-item fwb">
+							<a href="/patterns/about.html">About</a>
+						</li>
+					</ul>
+				</nav>
+        	</div>
 		</div>
 	</header>
+
 	<div class="wrap">
+		<div id="global-breadcrumb" class="header-context group">
+	<ol role="breadcrumbs" class="group">
+		<li><a href="/patterns/">Huxley patterns</a></li>
+	</ol>
+</div>
 
-		<div>
-			
+<div id="content" class="main-content selfclear">
+	<header class="header">
+		<h1>Huxley patterns</h1>
+		<p class="lead">This is your guide to consistent build patterns and styles for the Texas State ILS code name Huxley. </p>
+	</header>
+	<div class="row">
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/layout.html">Layout</a></h3>
+			<p>Grid unit proportions, gutters and spacing.</p>
 		</div>
-
-		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
-			<div class="line">
-				<div class="unit size1of4 pad-lv6 pad-lr0 hide-phone">
-					<ul class="regular pad-lv3"> 
-						<li class="selected"> 
-							<a href="/patterns/" title="Grid System"> 
-								<span class="nav-label">Grid System</span> 
-							</a>
-						</li>
-						<li>
-							<a href="/patterns/typography.html" title="Typography"> 
-								<span class="nav-label">Typography</span> 
-							</a>
-						</li>
-						<li>
-							<a href="/patterns/forms.html" title="Form Elements"> 
-								<span class="nav-label">Form Elements</span> 
-							</a> 
-						</li> 
-						<li> 
-							<a href="/patterns/navigation.html" title="Navigation"> 
-								<span class="nav-label">Navigation</span> 
-							</a> 
-						</li>
-						<li> 
-							<a href="/patterns/tables.html" title="Tables"> 
-								<span class="nav-label">Tables</span> 
-							</a> 
-						</li> 
-						<li> 
-							<a href="/patterns/lists.html" title="Lists"> 
-								<span class="nav-label">Lists</span> 
-							</a> 
-						</li>
-						<li> 
-							<a href="/patterns/feedback.html" title="Feedback"> 
-								<span class="nav-label">Feedback</span> 
-							</a> 
-						</li>
-						<li> 
-							<a href="/patterns/dialogs.html" title="Dialogs"> 
-								<span class="nav-label">Dialogs</span> 
-							</a> 
-						</li>
-						<li> 
-							<a href="/patterns/helpers.html" title="Helper Classes"> 
-								<span class="nav-label">Helper Classes</span> 
-							</a> 
-						</li> 
-					</ul>
-				</div>
-				<div class="lastUnit size3of4">
-					<div role="main" id="content" class="content selfclear relative">
-						<div class="lastUnit size1of1 header"> 
-							<h1>Grid System</h1> 
-						</div>
-						<div id="grid-sizes" class="line below48">
-							<div class="size1of1 lastUnit">
-								<p class="full-width below48">
-									Our grid system is composed of 8 flexible columns with a gutter between columns of 30px. We apply <a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp">border-box</a> so that the border and padding is included in the width of the grid columns.
-								</p>
-								<h3>Grid Sizes</h3>
-							</div>
-							<div class="line lastUnit below48"> 
-								<h4>Size 1 of 1</h4> 
-								<div class="unit lastUnit size1of1 alignc bg-b1"> 
-									<p class="grid-filler">1 / 1</p> 
-								</div> 
-							</div>
-							<div class="line lastUnit below48"> 
-								<h4>Size 1 of 2</h4>
-								<div class="unit size1of2 alignc bg-b1"> 
-									<p class="grid-filler">1 / 2</p> 
-								</div>
-								<div class="unit lastUnit size1of2 alignc bg-b1"> 
-									<p class="grid-filler">1 / 2</p> 
-								</div>
-							</div>
-							<div class="line lastUnit below48"> 
-								<h4>Size 1 of 3</h4>
-								<div class="unit size1of3 alignc bg-b1"> 
-									<p class="grid-filler">1 / 3</p> 
-								</div>
-								<div class="unit size1of3 alignc bg-b1"> 
-									<p class="grid-filler">1 / 3</p> 
-								</div>
-								<div class="unit lastUnit size1of3 alignc bg-b1"> 
-									<p class="grid-filler">1 / 3</p> 
-								</div>
-							</div>
-							<div class="line lastUnit below48"> 
-								<h4>Size 1 of 4</h4>
-								<div class="unit size1of4 alignc bg-b1"> 
-									<p class="grid-filler">1 / 4</p>
-								</div>
-								<div class="unit size1of4 alignc bg-b1"> 
-									<p class="grid-filler">1 / 4</p>
-								</div>
-								<div class="unit size1of4 alignc bg-b1"> 
-									<p class="grid-filler">1 / 4</p>
-								</div>
-								<div class="unit lastUnit size1of4 alignc bg-b1"> 
-									<p class="grid-filler">1 / 4</p>
-								</div>
-							</div>
-							<div class="line lastUnit below48"> 
-								<h4>Size 1 of 8</h4>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-								<div class="unit lastUnit size1of8 alignc bg-b1"> 
-									<p class="grid-filler">1 / 8</p>
-								</div>
-							</div>
-						</div>
-						<div id="grid-gutter" class="line below48">
-							<div class="size1of1 lastUnit"> 
-								<h3>Grid gutter</h3> 
-								<p class="full-width below24">Our grid columns have a 15px padding on either side that results in a 30px gutter between columns and a 15px gutter on the grid edges. Even though our columns are fluid, the gutter remains constant.</p> 
-							</div>
-							<div class="line lastUnit"> 
-								<div class="unit size1of3 alignc bg-r2">
-									<p class="gutter-filler">1 / 3</p>
-								</div> 
-								<div class="unit size1of3 alignc bg-r2">
-									<p class="gutter-filler">1 / 3</p>
-								</div> 
-								<div class="lastUnit size1of3 alignc bg-r2">
-									<p class="gutter-filler">1 / 3</p>
-								</div> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/typography.html">Typography</a></h3>
+			<p>Headings, body text, links, lists.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/colors.html">Color</a></h3>
+			<p>Color contrast, variables, and palettes.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/forms.html">Form elements</a></h3>
+			<p>Fields, labels, radios, checkboxes, buttons.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/data.html">Data</a></h3>
+			<p>Data in a table, numeric tabular data.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/button.html">Errors and validation</a></h3>
+			<p>Summary boxes, highlighting errors in forms.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/navigation.html">Navigation</a></h3>
+			<p>Local nav, tabs, accordions.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/data.html">Feedback</a></h3>
+			<p>Action-based feedback messages.</p>
+		</div>
+		<div class="col-md-4 below24">
+			<h3 class="below12"><a href="/patterns/button.html">Dialogs</a></h3>
+			<p>Modals, verification, and interactive dialog windows.</p>
 		</div>
 	</div>
+</div>
+	</div>
+
+<div id="global-search-overlay" role="search" aria-hidden="false" class="search-overlay-container navigation-overlay selfclear" style="z-index: 1000; visibility: visible; display: none; opacity: 1; transform: translateY(0px);">
+
+	<button title="Close menu" class="close-overlay float-right">Close</button>
+
+	<div class="wrap global-search">
+
+		<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate"> 
+			<div class="header col-md-12">
+				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
+			</div>
+
+			<div class="container relative below48">
+				<div class="col-md-2">
+					<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
+						<option selected="selected" value="search-alias=books">Books</option>
+						<option value="search-alias=books-keyword">&nbsp;&nbsp;&nbsp;Keyword</option>
+						<option value="search-alias=books-title">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=books-author">&nbsp;&nbsp;&nbsp;Author</option>
+						<option value="search-alias=books-book-number">&nbsp;&nbsp;&nbsp;Book Number</option>
+						<option value="search-alias=books-narrator">&nbsp;&nbsp;&nbsp;Narrator</option>
+						<option value="search-alias=books-series">&nbsp;&nbsp;&nbsp;Series</option>
+						<option value="search-alias=books-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=magazines">Magazines</option>
+						<option value="search-alias=magazines-keyword">&nbsp;&nbsp;&nbsp;Title</option>
+						<option value="search-alias=magazines-title">&nbsp;&nbsp;&nbsp;Code</option>
+						<option value="search-alias=magazines-subject-heading">&nbsp;&nbsp;&nbsp;Subject Heading</option>
+						<option value="search-alias=patron">Patron</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Name</option>
+						<option value="search-alias=patron-ID">&nbsp;&nbsp;&nbsp;Patron ID</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Email</option>
+						<option value="search-alias=patron-address">&nbsp;&nbsp;&nbsp;Address</option>
+						<option value="search-alias=patron-name">&nbsp;&nbsp;&nbsp;Zip</option>
+					</select>
+				</div>
+				<div class="col-md-8">
+					<input id="global-search" class="form-control large-control" name="global-search" type="search" tabindex="0" placeholder="Search">
+				</div>
+				<div class="col-md-2">
+					<input class="submit btn btn-large btn-primary col-md-12" type="submit" value="Search">
+					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
+				</div>
+			</div> 
+			<div class="container line below18">
+				<div class="col-m-12 alignc small-meta">
+					<a title="Search Tips">Advanced search keywords</a>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery-accessibleMegaMenu.js"></script>
+<script src="/js/global.js"></script>
+
 </body>
 </html>

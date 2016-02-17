@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add role | Users | Settings |  Huxley</title>
+	<title>Data |  Huxley UX Patterns</title>
 	<meta charset="utf-8">
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -22,26 +22,6 @@
 	<header role="banner" id="global-header" class="">
 		<div class="header-wrapper">
 			<div class="header-global">
-				<nav id="global-nav" class="float-left">
-					<ul class="nav-menu">
-						<li class="nav-item fwb">
-							<a href="#">
-								<img src="/img/icon-menu.png" alt="Navigate to Business Groups" />
-							</a>
-							<div class="sub-nav">
-								<ul class="sub-nav-group">
-									<li><a href="/reader-services/">Reader Services</a></li>
-									<li><a href="/collections/">Collections</a></li>
-									<li><a href="/audio/">Audio</a></li>
-									<li><a href="/circulation/">Circulation</a></li>
-									<li><a href="/public-awareness/">Public Awareness</a></li>
-									<li><a href="/office-services/">Office Services</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</nav>
-
 				<div class="header-logo">
 					<a href="/" title="Go to Dashboard" id="logo" class="content">
 						<img src="/img/huxley-logo.png" alt="Go to Dashboard" />
@@ -50,61 +30,11 @@
 
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
-						<li class="nav-item fwb nav-has-sub">
-							<a href="/books/">Books</a>
-							<div class="sub-nav">
-								<ul class="sub-nav-group">
-									<li><a href="#">Subject Heading &amp; Interest Areas</a></li>
-									<li><a href="#">Book Series</a></li>
-									<li><a href="#">Book Reserves</a></li>
-									<li><a href="#">ILL Book Reserves</a></li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item fwb nav-has-sub">
-							<a href="/magazines/">Magazines</a>
-							<div class="sub-nav">
-								<ul class="sub-nav-group">
-									<li><a href="#">Magazine Media</a></li>
-									<li><a href="#">Producers</a></li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item fwb nav-has-sub">
-							<a href="/machines/">Machines</a>
-							<div class="sub-nav">
-								<ul class="sub-nav-group">
-									<li><a href="#">Models</a></li>
-									<li><a href="#">Select Queue</a></li>
-									<li><a href="#">Hold Ranges</a></li>
-									<li><a href="#">Repair Centers</a></li>
-									<li><a href="#">Accessories</a></li>
-								</ul>
-							</div>
+						<li class="nav-item fwb">
+							<a href="/patterns/">Patterns</a>
 						</li>
 						<li class="nav-item fwb">
-							<a href="/patrons/">Patrons</a>
-						</li>
-						<li class="nav-item fwb">
-							<a href="/reports/">Reports</a>
-						</li>
-					</ul>
-				</nav>
-
-				<nav id="global-utility" class="float-right"> 
-					<ul class="nav-menu selfclear">
-						<li class="nav-item fwb nav-has-sub">
-							<a href="#">Zak</a>
-							<div class="sub-nav sub-nav-right">
-								<ul class="sub-nav-group">
-									<li><a href="/settings/users/view/">Profile</a></li>
-									<li><a href="/settings/users/">Settings</a></li>
-									<li><a href="/patterns/">Log out</a></li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item fwb nav-search-toggle nav-border-left">
-							<a href="#search" class="search-toggle js-header-toggle">Search</a>
+							<a href="/patterns/about.html">About</a>
 						</li>
 					</ul>
 				</nav>
@@ -113,38 +43,70 @@
 	</header>
 
 	<div class="wrap">
-		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
-			<div role="main" id="content" class="content selfclear relative">
-	<div class="header">
-		<h1 class="inline-block-i">Settings</h1>
-		<nav class="local-nav-container selfclear"> 
-			<ul class="nav-menu local-nav selfclear">
-				<li class="nav-item fwb current">
-					<a href="/settings/users/">Users</a>
-				</li>
-				<li class="nav-item fwb">
-					<a href="/settings/roles/">Roles</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-    	<div class="below12">
-            	<p><a href="/settings/users/view/">&lsaquo; Back to user</a></p>
-            	<h2>Add user to role</h2>
-            </div>
-    <form method="post" class="row">
-    	<fieldset class="col-md-6">
-    		<legend>Add user to role</legend>
-    		<label>Role name</label>
-    		<input type="text" class="form-control" placeholder="Start typing a role name...">
-    		<div class="form-controls selfclear">
-        		<button class="btn btn-primary float-left">Add group</button>
-        		<a href="/settings/users/view" class="i-inline-block pad-lv1 float-left">Cancel</a>
-    		</div>
-    	</fieldset>
-    </form>
+		<div id="global-breadcrumb" class="header-context group">
+   <ol role="breadcrumbs" class="group">
+      <li><a href="/patterns/">Huxley patterns</a></li>
+      <li><a href="/patterns/data.html">Data</a></li>
+   </ol>
 </div>
-		</div>
+
+<div id="content" class="main-content selfclear">
+   <header class="header">
+      <h3 class="dim-el4 mar-tb0 thin">Huxley patterns</h3>
+      <h1>Data</h1>
+   </header>
+
+   <h3>Tables</h3>
+
+   <table>
+      <thead>
+         <tr>
+            <th>Patron ID</th>
+            <th>Name</th>
+            <th>Patron Type</th>
+            <th>Status</th>
+            <th>Date</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>54324</td>
+            <td><a href="/patrons/patron-detail.html">Diana Rivera</a></td>
+            <td>Individual</td>
+            <td>Active</td>
+            <td>04/07/2016</td>
+         </tr>
+         <tr>
+            <td>54324</td>
+            <td><a href="/patrons/patron-detail.html">Diana Rivera</a></td>
+            <td>Individual</td>
+            <td>Active</td>
+            <td>04/07/2016</td>
+         </tr>
+         <tr>
+            <td>54324</td>
+            <td><a href="/patrons/patron-detail.html">Diana Rivera</a></td>
+            <td>Individual</td>
+            <td>Active</td>
+            <td>04/07/2016</td>
+         </tr>
+         <tr>
+            <td>54324</td>
+            <td><a href="/patrons/patron-detail.html">Diana Rivera</a></td>
+            <td>Individual</td>
+            <td>Active</td>
+            <td>04/07/2016</td>
+         </tr>
+         <tr>
+            <td>54324</td>
+            <td><a href="/patrons/patron-detail.html">Diana Rivera</a></td>
+            <td>Individual</td>
+            <td>Active</td>
+            <td>04/07/2016</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
 	</div>
 
 <div id="global-search-overlay" role="search" aria-hidden="false" class="search-overlay-container navigation-overlay selfclear" style="z-index: 1000; visibility: visible; display: none; opacity: 1; transform: translateY(0px);">

@@ -1,47 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Colors | Huxley | by Ambonare</title>
-<meta charset="utf-8">
-<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/favicons//ms-icon-144x144.png">
-<meta content="img/favicons/favicon.ico">
-<link rel="stylesheet" type="text/css" href="../css/patterns.css">
-<link rel="stylesheet" type="text/css" href="../css/huxley.css">
-<body>
+---
+layout: patterns
+title: Colors
+---
 
-   <header role="banner" id="global-header" class="">
-      <div class="header-wrapper">
-         <div class="header-global wrap">
-            <div class="header-logo">
-               <a href="huxley.html" title="Go to the Huxley homepage" id="logo" class="content">HUXLEY</a>
-            </div>
-            <nav id="global-nav" class="float-left">
-               <ul class="nav-menu">
-                      <li class="nav-item fwb">
-                     <a href="index.html">Patterns</a>
-                     </li>
-                     <li class="nav-item fwb">
-                     <a href="about.html">About</a>
-                     </li>
-                  <ul>
-              </nav>
-         </div>
-      </div>
-   </header>
+<div id="global-breadcrumb" class="header-context group">
+   <ol role="breadcrumbs" class="group">
+      <li><a href="/patterns/">Huxley patterns</a></li>
+      <li><a href="/patterns/colors.html">Colors</a></li>
+   </ol>
+</div>
 
-      <div class="wrap">
+<div id="content" class="main-content selfclear">
+	<header class="header">
+	  <h3 class="dim-el4 mar-tb0 thin">Huxley patterns</h3>
+	  <h1>Colors</h1>
+	  <p class="lead">Always use the Huxley color palette.</p>
+	</header>
 
-         <div role="main" id="content" class="content selfclear relative">
-            <div class="header">
-               <h1 class="inline-block-i">Reports</h1>
-            </div>
-         </div>
+	<nav class="local-nav-container selfclear below48"> 
+		<ul class="nav-menu local-nav selfclear">
+			<li class="nav-item fwb">
+				<a href="#contrast">Color contrast</a>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#palette">Main palette</a>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#status">Status colors</a>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#greyscale">Greyscale palette</a>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#extended">Extended palette</a>
+			</li>
+		</ul>
+	</nav>
 
-      </div>
-   </body>
-</html>
+	<section id="contrast" class="below48">
+		<h3>Color contrast</h3>
+		<p>The color contrast ratio for text and interactive elements should be at least 4.5:1 <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">as recommended by the W3C</a>. All ILS screens must match this standard.</p>
+	</section>
+
+	<section id="palette" class="below48">
+		<h3>Main palette</h3>
+		<p><a href="http://www.beautycolorcode.com/005297">http://www.beautycolorcode.com/005297</a></p>
+		<div class="example">
+			<div class="swatch-wrapper">
+				<h4>Text</h4>
+				<div class="swatch swatch-text-color"></div>
+				<ul class="below12">
+					<li><b>#000000</b></li>
+					<li>$text-color</li>
+				</ul>
+				<div class="swatch swatch-secondary"></div>
+				<ul class="below12">
+					<li><b>#4c4c4c</b></li>
+					<li>$secondary</li>
+				</ul>
+				<div class="swatch swatch-page-color"></div>
+				<ul>
+					<li><b>#FFFFFF</b></li>
+					<li>$page-color</li>
+				</ul>
+		    </div>
+			<div class="swatch-wrapper">
+				<h4>Links</h4>
+				<div class="swatch swatch-link-color"></div>
+				<ul class="below12">
+					<li><b>#005297</b></li>
+					<li>$link-color</li>
+				</ul>
+				<div class="swatch swatch-link-hover-color"></div>
+				<ul>
+					<li><b>#00325c</b></li>
+					<li>$link-hover-color</li>
+				</ul>
+			</div>
+			<div class="swatch-wrapper">
+				<h4>Backgrounds</h4>
+				<div class="swatch swatch-border-color"></div>
+				<ul class="below12">
+					<li><b>#BFBFBF</b></li>
+					<li>$border-color</li>
+				</ul>
+				<div class="swatch swatch-panel-color"></div>
+				<ul class="below12">
+					<li><b>#EEEEEE</b></li>
+					<li>$panel-color</li>
+				</ul>
+				<div class="swatch swatch-highlight-color"></div>
+				<ul>
+					<li><b>#F8F8F8</b></li>
+					<li>$highlight-color</li>
+				</ul>
+			</div>
+			<div class="swatch-wrapper">
+				<h4>Buttons</h4>
+				<div class="swatch swatch-button-color"></div>
+				<ul class="below12">
+					<li><b>#005297</b></li>
+					<li>$link-color</li>
+				</ul>
+				<div class="swatch swatch-button-hover-color"></div>
+				<ul>
+					<li><b>#00325c</b></li>
+					<li>$link-hover-color</li>
+				</ul>
+			</div>
+			<div class="swatch-wrapper">
+				<h4>Focus</h4>
+				<div class="swatch swatch-focus"></div>
+				<ul>
+					<li><b>#FFBF47</b></li>
+					<li>$focus</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="status" class="below48">
+		<h3>Status colors</h3>
+		<div class="example">
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-success"></div>
+		      <ul>
+		        <li><b>#529700</b></li>
+		        <li>$success</li>
+		      </ul>
+		    </div>
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-error"></div>
+		      <ul>
+		        <li><b>#970006</b></li>
+		        <li>$error</li>
+		      </ul>
+		    </div>
+		</div>
+	</section>
+
+	<section id="greyscale">
+		<h3>Greyscale palette</h3>
+		<div class="example">
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-black"></div>
+		      <ul>
+		        <li><b>#000000</b></li>
+		        <li>$black</li>
+		      </ul>
+		    </div>
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-grey-1"></div>
+		      <ul>
+		        <li><b>#4c4c4c</b></li>
+		        <li>$grey-1</li>
+		      </ul>
+		    </div>
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-grey-2"></div>
+		      <ul>
+		        <li><b>#BFBFBF</b></li>
+		        <li>$grey-2</li>
+		      </ul>
+		    </div>
+		    <div class="swatch-wrapper">
+		      <div class="swatch swatch-grey-3"></div>
+		      <ul>
+		        <li><b>#EEEEEE</b></li>
+		        <li>$grey-3</li>
+		      </ul>
+		    </div>
+		    <div class="swatch-wrapper">
+				<div class="swatch swatch-grey-4"></div>
+					<ul>
+					<li><b>#F8F8F8</b></li>
+					<li>$grey-4</li>
+				</ul>
+		    </div>
+		</div>
+	</section>
+
+</div>

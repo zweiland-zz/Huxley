@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% if page.title %}{{ page.title }} | {% endif %} Huxley UX Patterns</title>
+	<meta charset="utf-8">
+	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="img/favicons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/patterns.css">
+	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
+</head>
+<body>
+
+{% include patterns-header.html %}
+
+	<div class="wrap">
+		{{ content }}
+	</div>
+
+{% include footer.html %}
+
+</body>
+</html>
