@@ -7,7 +7,7 @@ title: Forms
 <div id="global-breadcrumb" class="header-context group">
    <ol role="breadcrumbs" class="group">
       <li><a href="/patterns/">Huxley patterns</a></li>
-      <li><a href="/patterns/forms.html">Forms</a></li>
+      <li>Forms</li>
    </ol>
 </div>
 
@@ -61,25 +61,27 @@ title: Forms
    <div id="selects" class="below48">
       <h3>Selects</h3>
       <div class="example">
-      	<select class="form-control auto-width nomargin"> 
-      		<option value="">Select an option</option> 
-      		<option value="1">option 1</option> 
-      		<option value="2">option 2</option> 
-      		<option value="3">option 3</option> 
-      	</select>
+         <div class="form-group">
+         	<select class="form-control auto-width nomargin"> 
+         		<option value="">Select an option</option> 
+         		<option value="1">option 1</option> 
+         		<option value="2">option 2</option> 
+         		<option value="3">option 3</option> 
+         	</select>
+         </div>
       </div>
    </div>
 
    <div id="text-input" class="below48">
       <h3>Text inputs</h3>
       <div class="example">
-         <div class="line">
         	<fieldset>
         		<legend>Personal information</legend>
-        		<label>First name</label>
-        		<input type="text" placeholder="e.g. Zak Weiland" class="form-control">
-        	</fieldset>
-         </div>
+            <div class="form-group">
+           		<label>First name</label>
+           		<input type="text" placeholder="e.g. Zak Weiland" class="form-control">
+            </div>
+        	</fieldset> 
       </div>
    </div>
 
@@ -96,17 +98,81 @@ title: Forms
    <div id="text-input-button" class="below48">
       <h3>Search</h3>
       <div class="example">
-         <div class="line">
-            <div class="field-wrapper form-inline with-button">
-               <input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
-               <select class="form-control auto-width nomargin">
-                  <option value="">Keyword</option>
-                  <option value="1">Title</option>
-                  <option value="2">Author</option>
-               </select>
-               <a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
-            </div>
+         <div class="form-group form-inline with-button">
+            <input type="text" name="inputandbutton" placeholder="I'm an input" class="form-control av-text" id="inputandbutton">
+            <select class="form-control auto-width nomargin">
+               <option value="">Keyword</option>
+               <option value="1">Title</option>
+               <option value="2">Author</option>
+            </select>
+            <a href="javascript:;" class="btn-small btn-primary">I'm a button</a>
          </div>
       </div>
    </div>
+
+   <div id="text-input-button" class="below48">
+      <h3>Checkboxes and radios</h3>
+      <div class="example">
+         <h4>Checkbox list</h4>
+         <div class="form-group">
+            <h5 class="small-meta fwb">Staff member</h5>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Craig York
+            </label>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Miles Lewis
+            </label>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Craig York
+            </label>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Miles Lewis
+            </label>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Craig York
+            </label>
+            <label class="label-checkbox">
+                <input type="checkbox" name="status" class="form-radio">
+                Miles Lewis
+            </label>
+         </div>
+         
+
+         <h4>Radio list</h4>
+         <div class="form-group">
+            <h5 class="small-meta fwb">Status</h5>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                Requested
+            </label>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                Master Ordered
+            </label>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                In Duplication
+            </label>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                Complete
+            </label>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                In Review
+            </label>
+            <label class="label-radio">
+                <input type="radio" name="status" class="form-radio">
+                Master Unavailable
+            </label>
+         </div>
+      </div>
+   </div>
+
+
 </div>

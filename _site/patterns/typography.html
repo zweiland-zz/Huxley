@@ -46,7 +46,7 @@
 		<div id="global-breadcrumb" class="header-context group">
    <ol role="breadcrumbs" class="group">
       <li><a href="/patterns/">Huxley patterns</a></li>
-      <li><a href="/patterns/typography.html">Typography</a></li>
+      <li>Typography</li>
    </ol>
 </div>
 
@@ -176,7 +176,7 @@
       <h3>Paragraphs</h3>
       <div class="example">
       <h4>Default text</h4>
-      <p>Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna. Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna.</p>
+      <p>This is the default paragraph body text. It has a max-width of 635px. If you'd like to override this use the <code>.full-width</code> class. Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna. Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna.</p>
 
       <h4>Small meta text</h4>
       <p class="small-meta">Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna. Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna.</p>
@@ -186,19 +186,64 @@
    <section id="links" class="below48">
       <h3>Links</h3>
       <div class="example">
-         <p>
-            <a href="#">A 18px link without surrounding text</a>
-         </p>
-
-         <p>
-            <a href="#">A 18px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-         </p>
-
-         <p>
-            <a href="#" rel="external">A 18px body copy external link.</a> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-         </p>
-
+         <p><a href="#">A 18px link without surrounding text</a></p>
+         <p><a href="#">A 18px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+         <p><a href="#" rel="external">A 18px body copy external link.</a> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
          <a href="#" class="link-back">Back</a>
+      </div>
+   </section>
+
+   <section id="lists" class="below48">
+      <h3>Lists</h3>
+      <div class="example">
+
+         <h5>Bulleted list</h5>
+         <ul class="list list-bullet">
+            <li>here is a bulleted list</li>
+            <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+            <li>vestibulum id ligula porta felis euismod semper</li>
+            <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+         </ul>
+
+         <h5>Numbered list</h5>
+         <ol class="list list-numbered">
+            <li>here is a numbered list</li>
+            <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+            <li>vestibulum id ligula porta felis euismod semper</li>
+            <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+         </ol>
+
+         <h5>Dotted list</h5>
+         <ul class="dotted-list">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More</a></li>
+         </ul>
+      </div>
+   </section>
+
+
+   <section id="hidden-text" class="below48">
+      <h3>Hidden text (progressive disclosure)</h3>
+      <p>Use this to make your page easier to scan, only showing contextual information when required.</p>
+      <p>Click on "2 versions" to see how this works.</p>
+      <div class="example">
+         <details>
+            <summary><span class="summary">2 versions</span></summary>
+            <div class="panel panel-border-narrow">
+               <ul class="list mar-tb0">
+                  <li>
+                     <h6>Harry Potter and Sorcerors Stone</h6>
+                     <p class="small-meta mar-tb0">This is a version note.</p>
+                  </li>
+                  <li>
+                     <h6>Harry Potter and Sorcerors Stone</h6>
+                     <p class="small-meta mar-tb0">This is a version note.</p>
+                  </li>
+               </ul>
+            </div>
+         </details>
       </div>
    </section>
 </div>

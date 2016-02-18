@@ -6,7 +6,7 @@ title: Dialogs
 <div id="global-breadcrumb" class="header-context group">
    <ol role="breadcrumbs" class="group">
       <li><a href="/patterns/">Huxley patterns</a></li>
-      <li><a href="/patterns/dialogs.html">Dialogs</a></li>
+      <li>Dialogs</li>
    </ol>
 </div>
 
@@ -15,4 +15,23 @@ title: Dialogs
       <h3 class="dim-el4 mar-tb0 thin">Huxley patterns</h3>
       <h1>Dialogs</h1>
    </header>
+
+	<section id="generic-dialogs">
+		<h3>Generic dialogs</h3>
+		<p>We use modals and dialogs for a variety of different purposes throughout the app including forms and verification prompts.</p>
+		<div class="example">
+			<button class="btn">Show generic modal</button>
+		</div>
+	</section>
+</div>
+
+<div data-type="dialog" data-id="genericModal" title="Sample Modal"> 
+  <div class="dijitDialogPaneContentArea"> 
+    <p>"Wow! That's a cool modal." --Somebody, somewhere. 
+    </p> 
+    <div class="form-group selfclear"> 
+      <button class="btn btn-primary float-left" data-type="dijit/form/Button" type="button" data-props="onClick:function(){genericModal.hide();}">Hide Modal</button> 
+      <a href="#" class="pad-lv1 float-left" onclick="closeDialog(); return false;">Cancel</a> 
+    </div> 
+  </div> 
 </div>

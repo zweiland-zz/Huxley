@@ -6,7 +6,7 @@ title: Errors and validation
 <div id="global-breadcrumb" class="header-context group">
    <ol role="breadcrumbs" class="group">
       <li><a href="/patterns/">Huxley patterns</a></li>
-      <li><a href="/patterns/errors.html">Errors and validation</a></li>
+      <li>Errors and validation</li>
    </ol>
 </div>
 
@@ -16,17 +16,59 @@ title: Errors and validation
       <h1>Errors and validation</h1>
    </header>
 
-  <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+    <nav class="local-nav-container selfclear below48"> 
+		<ul class="nav-menu local-nav selfclear">
+			<li class="nav-item fwb">
+				<a href="#summarise">Summarise errors</a>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#highlight-errors">Highlight errors in forms</a>
+			</li>
+		</ul>
+	</nav>
 
-    <h3 class="error-summary-heading">Message to alert the user to a problem goes here</h3>
+	<section id="summarise" class="below48">
+		<h3>Error message and summary box</h3>
+		<div class="example">
+			<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+				<h3 class="error-summary-heading">Message to alert the user to a problem goes here</h3>
+				<p>Optional description of the errors and how to correct them</p>
+				<ul class="error-summary-list">
+					<li>
+						<a href="#example-personal-details">Descriptive link to the question with an error</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-    <p>
-      Optional description of the errors and how to correct them
-    </p>
-
-    <ul class="error-summary-list">
-      <li><a href="#example-personal-details">Descriptive link to the question with an error</a></li>
-    </ul>
-
-  </div>
+	<section id="highlight-errors" class="below48">
+		<h3>Highlight errors in forms</h3>
+		<div class="example">
+			<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+				<h3 class="error-summary-heading">Message to alert the user to a problem goes here</h3>
+				<p>Optional description of the errors and how to correct them</p>
+				<ul class="error-summary-list">
+					<li>
+						<a href="#example-personal-details">Descriptive link to the question with an error</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Patron name</h2>
+            <div class="form-group error">
+           		<label>First name</label>
+           		<span class="form-hint">As shown on the Patron's drivers license or birth certificate.</span>
+           		<span class="error-message">Error message about first name goes here</span>
+           		<input type="text" placeholder="e.g. Zachary" class="form-control">
+            </div>
+            <div class="form-group error">
+           		<label>Last name</label>
+           		<span class="error-message">Error message about last name goes here</span>
+           		<input type="text" placeholder="e.g. Weiland" class="form-control">
+            </div>
+            <div class="form-group">
+            	<button class="btn btn-primary">Save changes</button>
+            </div>
+		</div>
+	</section>
 </div>
