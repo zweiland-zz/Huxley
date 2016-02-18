@@ -188,7 +188,7 @@ a[rel="external"]:after {
 }
 .text-red,
 .required {
-    color: #be0008 !important;
+    color: #BE0008 !important;
 }
 .text-light-grey { 
     color:#BFBFBF !important;
@@ -852,6 +852,13 @@ input[type="search"].form-control-search { padding-right: 30px; }
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px 15px 15px 15px;
+}
+.error-summary .error-summary-list a {
+    color: #BE0008;
+    font-weight: bold;
+}
+.error-summary p {
+    margin-bottom: 10px;
 }
 
 
