@@ -47,7 +47,7 @@ embed, iframe, object, video {
 
 html, body, button, input, table, td, th {
     font-family: Arial, sans-serif;
-    /*font-family:  "Transport New Light", Arial, sans-serif;*/
+    font-family:  "Transport New Light", Arial, sans-serif;
 }
 
 input:focus, textarea:focus, select:focus, button:focus, #global-header input:focus {
@@ -182,7 +182,7 @@ a[rel="external"]:after {
 /* Colors */
 
 .border-color {
-    background-color: #BFBFBF;
+    background-color: #CFCFCF;
 }
 .panel-color {
     background-color: #DEDEDE;
@@ -195,7 +195,7 @@ a[rel="external"]:after {
     color: #BE0008 !important;
 }
 .text-light-grey { 
-    color:#BFBFBF !important;
+    color:#CFCFCF !important;
 }
 .bg-b1 {
     background-color: #81B2DB;
@@ -216,10 +216,10 @@ a[rel="external"]:after {
 }
 .swatch-page-color {
     background: #FFFFFF;
-    border: 1px solid #BFBFBF;
+    border: 1px solid #CFCFCF;
 }
 .swatch-border-color {
-    background: #BFBFBF;
+    background: #CFCFCF;
 }
 .swatch-panel-color {
     background: #EEEEEE;
@@ -243,11 +243,11 @@ a[rel="external"]:after {
 }
 .swatch-light-green,
 .bg-light-green {
-    background: #b5ff5c;
+    background: #B5FF5C;
 }
 .swatch-error,
 .bg-red {
-    background: #be0008;
+    background: #BE0008;
 }
 .swatch-black, .black {
     background: #000000;
@@ -255,10 +255,10 @@ a[rel="external"]:after {
 .swatch-grey-1, 
 .grey-1,
 .swatch-secondary {
-    background: #4c4c4c;
+    background: #6C6C6C;
 }
 .swatch-grey-2, .grey-2 {
-    background: #BFBFBF;
+    background: #CFCFCF;
 }
 .swatch-grey-3 {
     background: #EEEEEE;
@@ -268,11 +268,11 @@ a[rel="external"]:after {
 }
 .swatch-light-blue, 
 .bg-light-blue {
-    background-color: #abd8ff;
+    background-color: #ABD8FF;
 }
 .swatch-highlight-blue, 
 .bg-highlight-blue {
-    background-color: #e5f3ff;
+    background-color: #E5F3FF;
 }
 .swatch-orange, 
 .bg-orange {
@@ -284,11 +284,11 @@ a[rel="external"]:after {
 }
 .swatch-highlight-yellow,
 .bg-highlight-yellow {
-    background: #f2ffa9;
+    background: #F2FFA9;
 }
 .swatch-pink,
 .bg-pink {
-    background: #ffabae;
+    background: #FFAbAE;
 }
 
 
@@ -304,7 +304,6 @@ a, span {
 }
 
 ul, ol {
-    font-size: 18px;
     line-height: 1.5;
     outline: 0;
     list-style: none;
@@ -343,7 +342,7 @@ h6, .zeta {
     margin: 0;
     color: #000000;
     font-family: Arial, sans-serif;
-    /*font-family: "Transport New Heavy", Arial, sans-serif;*/
+    font-family: "Transport New Heavy", Arial, sans-serif;
 }
 
 h1, .h1 {
@@ -387,7 +386,7 @@ h5, .h5 {
 
 p, .p {
     max-width: 635px;
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 1.5;
     margin-bottom: 1.5em;
 }
@@ -397,10 +396,11 @@ p, .p {
 }
 
 .fwb, strong {
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
 }
 
 .thin {
+    font-family: "Transport New Light", Arial, sans-serif;
     font-weight: lighter;
 }
 
@@ -503,14 +503,15 @@ p, .p {
     padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
     font-size: 12px;
     line-height: 1.25;
-    font-weight: 400;
+    font-family: "Transport New Light", Arial, sans-serif;
+    letter-spacing: .5px;
     text-transform: none;
-    background: #bfbfbf;
+    background: #CFCFCF;
     color: white;
 }
 
 ._pull-title, .notes:before {
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     font-size: 17px;
     text-transform: capitalize;
     position: absolute;
@@ -578,18 +579,18 @@ table {
     width: 100%;
 }
 table th, table td {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.25;
-    font-weight: 400;
+    font-family: "Transport New Light", Arial, sans-serif;
     text-transform: none;
     padding: 0.75em 0 0.5625em 0;
     text-align: left;
     color: #000;
-    border-bottom: 1px solid #BFBFBF;
+    border-bottom: 1px solid #CFCFCF;
     position: relative;
 }
 table th {
-    font-weight: 700;
+    font-family: "Transport New Heavy", Arial, sans-serif;
 }
 table tbody tr:hover {
     background-color: #E5F3FF;
@@ -619,7 +620,7 @@ button, .btn-large, .btn {
     font-size: 1em;
     line-height: 1.25;
     text-decoration: none;
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
     -webkit-box-sizing: border-box;
@@ -630,7 +631,7 @@ button, .btn-large, .btn {
 }
 
 button:hover, .btn:hover, .btn:focus {
-    background-color: #BFBFBF;
+    background-color: #CFCFCF;
     color: #000;
 }
 
@@ -676,7 +677,7 @@ button:active, .btn:active {
 label, input, select, textarea {
     font-size: 16px;
     line-height: 18px;
-    font-weight: normal;
+    font-family: "Transport New Light", Arial, sans-serif;
 }
 
 select {
@@ -684,7 +685,7 @@ select {
     height: 40px;
     border: none;
     font-size: 16px;
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     letter-spacing: .01em;
     border-collapse: separate;
     width: 100%;
@@ -697,7 +698,7 @@ legend {
     display: block;
     color: #000000;
     font-size: 16px;
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     letter-spacing: .01em;
     margin: 0 0 1.2em 0;
     line-height: 1.6em;
@@ -706,7 +707,7 @@ legend {
 
 label {
     color: #000000;
-    font-weight: 600;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     display: block;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -716,11 +717,10 @@ label {
 
 .form-hint {
     line-height: 1.25;
-    font-weight: 400;
+    font-family: "Transport New Light", Arial, sans-serif;
     text-transform: none;
     display: block;
-    color: #6f777b;
-    font-weight: normal;
+    color: #6C6C6C;
     margin-bottom: 5px;
 }
 
@@ -756,15 +756,15 @@ input[type="tel"]:hover, input[type="color"]:hover,
 
 input[type="radio"], input[type="checkbox"] { margin-left: 0; margin-top: 0; position: relative; top: 2px; }
 
-::-webkit-input-placeholder { color: #BFBFBF; }
-:-moz-placeholder { color: #BFBFBF; }
-::-moz-placeholder { color: #BFBFBF; }
-:-ms-input-placeholder { color: #BFBFBF; }
+::-webkit-input-placeholder { color: #CFCFCF; }
+:-moz-placeholder { color: #CFCFCF; }
+::-moz-placeholder { color: #CFCFCF; }
+:-ms-input-placeholder { color: #CFCFCF; }
 
 input.disabled {
- background: #f8f8f8;
- color: #BFBFBF;
- cursor: not-allowed;
+    background: #F8F8F8;
+    color: #CFCFCF;
+    cursor: not-allowed;
 }
 
 .field-wrapper {
@@ -802,12 +802,12 @@ input.disabled {
     box-sizing: border-box;
     font-size: 1.125em;
     line-height: 1.25;
-    font-weight: 400;
+    font-family: "Transport New Light", Arial, sans-serif;
     text-transform: none;
     width: 100%;
     padding: 4px;
     background-color: #fff;
-    border: 2px solid #BFBFBF;
+    border: 2px solid #CFCFCF;
     border-radius: 4px;
     position: relative;
 }
@@ -822,7 +822,7 @@ input.disabled {
     position: absolute;
     background-color: #fff;
     border-radius: 6px;
-    border: solid 1px #BFBFBF;
+    border: solid 1px #CFCFCF;
     background-clip: padding-box;
     -webkit-overflow-scrolling: touch;
     box-shadow: 0 2px 3px 0 #e0e0e0;
@@ -853,7 +853,7 @@ input.disabled {
 
 .label-radio, .label-checkbox {
     font-size: .875em;
-    font-weight: lighter;
+    font-family: "Transport New Light", Arial, sans-serif;
     padding-bottom: 0;
 }
 
@@ -907,7 +907,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 .error-summary .error-summary-list a {
     color: #BE0008;
-    font-weight: bold;
+    font-family: "Transport New Heavy", Arial, sans-serif;
 }
 .error {
     border-left: 5px solid #BE0008;
@@ -915,7 +915,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 .error .error-message {
     color: #BE0008;
-    font-weight: bold;
+    font-family: "Transport New Heavy", Arial, sans-serif;
     line-height: 1.25;
     text-transform: none;
     display: block;
@@ -946,7 +946,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 
 .local-nav {
-    border-bottom: solid 1px #BFBFBF;
+    border-bottom: solid 1px #CFCFCF;
     display: block;
 }
 
@@ -961,7 +961,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
 .local-nav>li>a, 
 .local-nav>li .hover-list>li>a {
     color: #000000;
-    font-weight: 600;
+    font-weight: "Transport New Heavy", Arial, sans-serif;
     padding: 15px 0 15px 0;
     line-height: 1;
     float: left;
@@ -978,14 +978,14 @@ input[type="search"].form-control-search { padding-right: 30px; }
 }
 .local-nav>li.current>a, 
 .local-nav>li.current>ul>li>a { 
-    color: #005297; 
+    color: #000000; 
 }
 .local-nav > li > .sub-nav li a {
     font-size: 16px;
 }
 .local-nav > li > .sub-nav {
     border-radius: 0 0 6px 6px;
-    margin-top: -22px;
+    margin-top: -16px;
 }
     
 
@@ -1047,9 +1047,9 @@ input[type="search"].form-control-search { padding-right: 30px; }
     color: #000000;
     background-image: url(../img/search-button.png);
     background-repeat: no-repeat;
-    background-position: 7.5px 46%;
+    background-position: 15px 48%;
     height: auto;
-    padding-left: 32.5px;
+    padding-left: 40px;
 }
 #global-header .header-wrapper .header-global .site-search {
     width: 33.33%;
@@ -1207,11 +1207,11 @@ input[type="search"].form-control-search { padding-right: 30px; }
     padding: 15px;
     margin: 0;
     color: #000;
+    font-size: 16px;
 }
 #global-header .nav-item > a:hover,
-#global-header .nav-item > a:focus,
 #global-header .nav-item > a.open {
-    background-color: #BFBFBF;
+    background-color: #CFCFCF;
     color: black;
 }
 .nav-item > a.open {
@@ -1225,7 +1225,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
     margin-top: 5px;
     margin-left: -4px;
     padding: 0;
-    border: solid 1px #BFBFBF;
+    border: solid 1px #CFCFCF;
     background-color: #fff;
     overflow: hidden;
     position: absolute;
@@ -1255,7 +1255,7 @@ input[type="search"].form-control-search { padding-right: 30px; }
     list-style-type: none;
     margin: 0;
     padding: 0;
-	border-bottom: 1px solid #BFBFBF;
+	border-bottom: 1px solid #CFCFCF;
 }
 .sub-nav li:last-child {
 	border-bottom: none;
