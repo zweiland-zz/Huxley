@@ -1,6 +1,7 @@
 ---
 layout: patterns
 title: Navigation
+js_file: /js/accessible-accordion
 ---
 
 <div id="global-breadcrumb" class="header-context group">
@@ -16,22 +17,25 @@ title: Navigation
       <h1>Navigation</h1>
    </header>
 
-   <div class="line local-nav-container">
-      <div class="lastUnit size1of1">
-         <ul class="local-nav selfclear">
-            <li>
-               <a href="#local-navigation">Local Navigation</a>
-            </li>
-            <li>
-               <a href="#tabs">Tabs</a>
-            </li>
-         </ul>
-      </div>
-   </div>
+   <nav class="local-nav-container selfclear below48"> 
+      <ul class="nav-menu local-nav selfclear">
+         <li class="nav-item fwb">
+            <a href="#local-navigation">Local navigation</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#tabs">Tabs</a>
+         </li>
+         <li class="nav-item fwb">
+            <a href="#accordion">Accordion</a>
+         </li>
+      </ul>
+   </nav>
+
    <div id="btns" class="line below48">
       <div class="lastUnit size1of1">
-         <h3>Local Navigation</h3>
-         <div class="example">
+         <h3>Local navigation</h3>
+         <p>Local navigation is used to jump between pages that categorically fall under the same (main) section</p>
+         <div class="example overflow-visible">
 
             <nav class="local-nav-container selfclear"> 
                <ul class="nav-menu local-nav selfclear">
@@ -42,9 +46,9 @@ title: Navigation
                      <a href="#">Formats</a>
                      <div class="sub-nav">
                         <ul class="sub-nav-group">
-                           <li><a href="#">Service Profiles</a></li>
-                           <li><a href="#">Request Quotas</a></li>
-                           <li><a href="#">Auto-Select Categories</a></li>
+                           <li><a href="#">Service profiles</a></li>
+                           <li><a href="#">Request quotas</a></li>
+                           <li><a href="#">Auto-select categories</a></li>
                         </ul>
                      </div>
                   </li>
@@ -52,10 +56,10 @@ title: Navigation
                      <a href="#">Books</a>
                      <div class="sub-nav">
                         <ul class="sub-nav-group">
-                           <li><a href="#">Requests and Reserves</a></li>
-                           <li><a href="#">Current Loans</a></li>
-                           <li><a href="#">Reading History</a></li>
-                           <li><a href="#">Lost or Broken</a></li>
+                           <li><a href="#">Requests and reserves</a></li>
+                           <li><a href="#">Current loans</a></li>
+                           <li><a href="#">Reading history</a></li>
+                           <li><a href="#">Lost or broken</a></li>
                         </ul>
                      </div>
                   </li>
@@ -63,9 +67,9 @@ title: Navigation
                      <a href="#">Magazines</a>
                      <div class="sub-nav">
                         <ul class="sub-nav-group">
-                           <li><a href="#">Magazine Requests</a></li>
-                           <li><a href="#">Magazine Subscriptions</a></li>
-                           <li><a href="#">Subscription History</a></li>
+                           <li><a href="#">Magazine requests</a></li>
+                           <li><a href="#">Magazine subscriptions</a></li>
+                           <li><a href="#">Subscription history</a></li>
                         </ul>
                      </div>
                   </li>
@@ -76,7 +80,7 @@ title: Navigation
                      <a href="#">Catalogs</a>
                   </li>
                   <li class="nav-item fwb">
-                     <a href="#">Tech Support</a>
+                     <a href="#">Tech support</a>
                   </li>
                </ul>
             </nav>
@@ -84,14 +88,101 @@ title: Navigation
          </div>
       </div>
    </div>
-   <div id="btns-anchor-input" class="line below48">
-   	<div class="lastUnit size1of1">
-         <h3>Tabs</h3>
-         <div class="example">
-            <div class="line">
-            	here.
-            </div>
+   <div id="tabs" class="below48">
+      <h3>Tabs</h3>
+      <div class="example">
+         <div class="tab-interface">
+            <ul>
+               <li><a href="#section1">Section 1</a></li>
+               <li><a href="#section2">Section 2</a></li>
+               <li><a href="#section3">Section 3</a></li>
+            </ul>
+            <section id="section1">
+               <h3>Section 1</h3>
+                <p>Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Vestibulum sit amet ipsum lacus. Suspendisse <em>potenti</em>. </p><p>Nulla lobortis tempus commodo. Fusce ac sodales magna. Cras molestie risus a <q cite='http://www.heydonworks.com'>enim convallis vitae</q> luctus libero lacinia. Donec tempus tempus tellus, ac lacinia turpis mattis ac. Maecenas sit <q cite='http://www.heydonworks.com'>amet tellus nec mi gravida posuere</q> non pretium magna. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Aliquam tincidunt velit sit amet ante hendrerit tempus. Sed mauris arcu, aliquet ultrices malesuada sed, pretium id <kbd>CTRL</kbd> + <kbd>V</kbd> massa. </p>
+            </section>
+            <section id="section2">
+               <h3>Section 2</h3>
+                <p>Fusce ac sodales <abbr title='Cascading Style Sheets'>CSS</abbr> magna. Donec et nisi dictum felis sollicitudin congue. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, iaculis pretium sem orci aliquet mauris. Suspendisse <del>potenti</del>. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Fusce ac sodales magna. Potenti et eros sed justo commodo bibendum non at nunc. </p><p>Suspendisse potenti cras molestie, risus a enim convallis vitae luctus libero lacinia. Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. Suspendisse potenti. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, <a href='#'>iaculis pretium</a> sem orci aliquet mauris. Donec a congue leo. Vestibulum sit amet ipsum lacus. </p>
+            </section>
+            <section id="section3">
+               <h3>Section 3</h3>
+                <p>Potenti et eros sed justo commodo bibendum non at nunc. Maecenas sit amet tellus nec mi gravida posuere non pretium magna. Nulla auctor eleifend turpis consequat pharetra. </p><p>Vestibulum sit amet ipsum lacus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, iaculis pretium sem orci aliquet mauris. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. </p><p>Suspendisse potenti. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Suspendisse potenti H<sub>2</sub>0. </p>
+            </section>
+         </div>  	
+      </div>
+   </div>
+   <div id="accordion" class="below48">
+      <h3>Accordion</h3>
+      <div class="example">
+
+         <div id="accordian1" class="tabpanel" role="tablist" multiselectable="true"> 
+
+           <h3 id="tab1" class="tab accordian selected" aria-selected="true" aria-controls="panel1" aria-expanded="true" role="tab" tabindex="0">
+             <img src="http://www.oaa-accessibility.org/media/examples/images/expanded.gif" alt="expanded" /> 
+             Crust 
+           </h3> 
+
+           <div id="panel1" class="panel accordian" aria-labelledby="tab1" aria-hidden="false" role="tabpanel"> 
+             <h3 id="crust-label">Select Crust</h3> 
+              
+                   <ul class="controlList" aria-labelledby="crust-label"> 
+                     <li><input id="p1_opt1" type="radio" name="crust" value="crust1" /><label for="p1_opt1">Deep Dish</label></li> 
+                     <li><input id="p1_opt2" type="radio" name="crust" value="crust2" checked="checked" /><label for="p1_opt2">Thick and cheesy</label></li> 
+                     <li><input id="p1_opt3" type="radio" name="crust" value="crust3" /><label for="p1_opt3">Thick and spicy</label></li> 
+                     <li><input id="p1_opt4" type="radio" name="crust" value="crust4" /><label for="p1_opt4">Thin</label></li> 
+                  </ul> 
+           </div> 
+
+           <h3 id="tab2" class="tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="tab" tabindex="-1"> 
+             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+             Veggies 
+           </h3> 
+           <div id="panel2" class="panel accordian" aria-labelledby="tab2" aria-hidden="true" role="tabpanel"> 
+             <h3 id="veg-label">Select Vegetables</h3>   
+              
+                  <ul class="controlList" aria-labelledby="veg-label"> 
+                     <li><input id="p2_opt1" type="checkbox" name="veg" value="black olives" /><label for="p2_opt1">Black Olives</label></li> 
+                     <li><input id="p2_opt2" type="checkbox" name="veg" value="green olives" /><label for="p2_opt2">Green Olives</label></li> 
+                     <li><input id="p2_opt3" type="checkbox" name="veg" value="green peppers" /><label for="p2_opt3">Green Peppers</label></li> 
+                     <li><input id="p2_opt4" type="checkbox" name="veg" value="mushrooms" /><label for="p2_opt4">Mushrooms</label></li> 
+                     <li><input id="p2_opt5" type="checkbox" name="veg" value="onions" /><label for="p2_opt5">Onions</label></li> 
+                     <li><input id="p2_opt6" type="checkbox" name="veg" value="pineapple" /><label for="p2_opt6">Pineapple</label></li> 
+                  </ul> 
+           </div> 
+
+           <h3 id="tab3" class="tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="tab" tabindex="-1"> 
+             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+             Carnivore 
+           </h3> 
+           <div id="panel3" class="panel accordian" aria-labelledby="tab3" aria-hidden="true" role="tabpanel"> 
+             <h3 id="meat-label">Select Carnivore Options</h3> 
+              
+                   <ul class="controlList" aria-labelledby="meat-label"> 
+                     <li><input id="p3_opt1" type="checkbox" name="meat" value="pepperoni" /><label for="p3_opt1">Pepperoni</label></li> 
+                     <li><input id="p3_opt2" type="checkbox" name="meat" value="sausage" /><label for="p3_opt2">Italian Sausage</label></li> 
+                     <li><input id="p3_opt3" type="checkbox" name="meat" value="ham" /><label for="p3_opt3">Ham</label></li> 
+                     <li><input id="p3_opt4" type="checkbox" name="meat" value="hamburger" /><label for="p3_opt4">Hamburger</label></li> 
+                   </ul> 
+           </div> 
+
+           <h3 id="tab4" class="tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="tab" tabindex="-1"> 
+             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+             Delivery 
+           </h3> 
+           <div id="panel4" class="panel accordian" aria-labelledby="tab4" aria-hidden="true" role="tabpanel"> 
+              <h3 id="delivery-label">Select Delivery Method</h3> 
+              
+            <ul class="controlList" aria-labelledby="delivery-label"> 
+               <li><input id="p4_opt1" type="radio" name="delivery" value="delivery1" checked="checked" /><label for="p4_opt1">Delivery</label></li> 
+               <li><input id="p4_opt2" type="radio" name="delivery" value="delivery2" /><label for="p4_opt2">Eat in</label></li> 
+               <li><input id="p4_opt3" type="radio" name="delivery" value="delivery3" /><label for="p4_opt3">Carry out</label></li> 
+               <li><input id="p4_opt4" type="radio" name="delivery" value="delivery4" /><label for="p4_opt4">Overnight mail</label></li> 
+            </ul> 
          </div>
-     </div>
+            
+      </div>
+
+      </div>
    </div>
 </div>

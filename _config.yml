@@ -1,1 +1,10 @@
+
+custom_css: authormarks
+
+custom_js:
+- jquery.min
+
 auto: true
+
+sass:
+    style: compressed

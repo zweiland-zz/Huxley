@@ -6,7 +6,6 @@
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta content="img/favicons/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="/css/patterns.css">
 	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
 </head>
 <body>
@@ -20,6 +19,12 @@
 	</div>
 
 {% include footer.html %}
+
+{% if page.default %}
+  {% for js_file in page.default %}
+  <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
+  {% endfor %}
+{% endif %}
 
 </body>
 </html>

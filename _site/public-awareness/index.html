@@ -6,7 +6,6 @@
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta content="img/favicons/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="/css/patterns.css">
 	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
 </head>
 <body>
@@ -117,13 +116,41 @@
 			<div role="main" id="content" class="content selfclear relative">
 	<div class="header">
 		<h1 class="inline-block-i">Public Awareness</h1>
-    	<ul class="local-nav selfclear">
-			<li class="current"><a href="#">Overview</a></li>
-			<li><a href="#">TBP Service Regions</a></li>
-			<li><a href="#">General Information</a></li>
-			<li><a href="#">Mailing Label Template</a></li>
-       </ul>
 	</div>
+	<nav class="local-nav-container selfclear"> 
+		<ul class="nav-menu local-nav selfclear">
+			<li class="nav-item fwb current">
+				<a href="#">Overview</a>
+			</li>
+			<li class="nav-item fwb nav-has-sub">
+				<a href="#">Service Regions</a>
+				<div class="sub-nav">
+					<ul class="sub-nav-group">
+						<li><a href="#">Texas Library Systems</a></li>
+						<li><a href="#">Comptroller Economic Regions</a></li>
+						<li><a href="#">Councils of Government</a></li>
+						<li><a href="#">Metropolitan Statistical Areas</a></li>
+						<li><a href="#">TEA Educational Service Centers</a></li>
+						<li><a href="#">Border Regions</a></li>
+						<li><a href="#">State Summary</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item fwb nav-has-sub">
+				<a href="#">General Information</a>
+				<div class="sub-nav">
+					<ul class="sub-nav-group">
+						<li><a href="#">Regional Libraries</a></li>
+						<li><a href="#">City / County Combinations</a></li>
+						<li><a href="#">County List</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item fwb">
+				<a href="#">Mailing Label Template</a>
+			</li>
+		</ul>
+	</nav>
 </div>
 
 		</div>
@@ -134,15 +161,14 @@
 	<button title="Close menu" class="close-overlay float-right">Close</button>
 
 	<div class="wrap global-search">
-
-		<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate"> 
+		<form id="main-search" class="below48 row" method="get" url="/search/all" novalidate="novalidate">
 			<div class="header col-md-12">
 				<h2 class="alignc below24 fwb">Search Books, Magazines, Machines or Patrons</h2>
 			</div>
 
 			<div class="container relative below48">
 				<div class="col-md-2">
-					<select class="site-search-dropdown form-control large-control" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
+					<select class="site-search-dropdown form-control input-lg" id="searchDropdownBox" name="url" title="Search in" style="top: 0px;">
 						<option selected="selected" value="search-alias=books">Books</option>
 						<option value="search-alias=books-keyword">&nbsp;&nbsp;&nbsp;Keyword</option>
 						<option value="search-alias=books-title">&nbsp;&nbsp;&nbsp;Title</option>
@@ -164,10 +190,10 @@
 					</select>
 				</div>
 				<div class="col-md-8">
-					<input id="global-search" class="form-control large-control" name="global-search" type="search" tabindex="0" placeholder="Search">
+					<input id="global-search" class="form-control input-lg" name="global-search" type="search" tabindex="0" placeholder="Search">
 				</div>
 				<div class="col-md-2">
-					<input class="submit btn btn-large btn-primary col-md-12" type="submit" value="Search">
+					<input class="submit btn btn-l btn-primary col-md-12" type="submit" value="Search">
 					<!--<div class="loading-search hide pad-lv5 absolute"></div>-->
 				</div>
 			</div> 
@@ -186,6 +212,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="/js/jquery-accessibleMegaMenu.js"></script>
 <script src="/js/global.js"></script>
+
+
 
 </body>
 </html>
