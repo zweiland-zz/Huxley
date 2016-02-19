@@ -1,10 +1,12 @@
 
-custom_css: authormarks
+custom_css: 
+  - foo.css
 
 custom_js:
-- jquery.min
+- /js/accessible-accordion.js
 
 auto: true
 
 sass:
     style: compressed
+    sass_dir: _sass

@@ -21,17 +21,34 @@ title: Dialogs
 		<p>We use modals and dialogs for a variety of different purposes throughout the app including forms and verification prompts.</p>
 		<div class="example">
 			<button class="btn">Show generic modal</button>
+
+      <button id="big-red" data-dialog-call="I really do not like you pressing that" data-dialog-response="I understand">Big Red Button</button>
+
 		</div>
 	</section>
 </div>
 
-<div data-type="dialog" data-id="genericModal" title="Sample Modal"> 
+
+
+<dialog tabindex="0" open="open" role="alertdialog" aria-labelledby="d-message">
+   <div>
+      <div role="document" tabindex="0">
+         <p id="d-message">I really do not like you pressing that</p>
+         <button class="btn btn-primary">I understand</button>
+      </div>
+   </div>
+</dialog>
+
+
+<!--
+<div data-type="dialog" data-id="genericModal" title="Sample Modal">
   <div class="dijitDialogPaneContentArea"> 
-    <p>"Wow! That's a cool modal." --Somebody, somewhere. 
+    <p>"Wow! That's a cool modal." Somebody, somewhere. 
     </p> 
     <div class="form-group selfclear"> 
       <button class="btn btn-primary float-left" data-type="dijit/form/Button" type="button" data-props="onClick:function(){genericModal.hide();}">Hide Modal</button> 
       <a href="#" class="pad-lv1 float-left" onclick="closeDialog(); return false;">Cancel</a> 
     </div> 
   </div> 
-</div>
+</div>-->
+

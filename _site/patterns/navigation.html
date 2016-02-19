@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta content="img/favicons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
+	
 </head>
 <body>
 
@@ -145,7 +146,8 @@
             </section>
             <section id="section3">
                <h3>Section 3</h3>
-                <p>Potenti et eros sed justo commodo bibendum non at nunc. Maecenas sit amet tellus nec mi gravida posuere non pretium magna. Nulla auctor eleifend turpis consequat pharetra. </p><p>Vestibulum sit amet ipsum lacus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, iaculis pretium sem orci aliquet mauris. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. </p><p>Suspendisse potenti. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Suspendisse potenti H<sub>2</sub>0. </p>
+                <p>Potenti et eros sed justo commodo bibendum non at nunc. Maecenas sit amet tellus nec mi gravida posuere non pretium magna. Nulla auctor eleifend turpis consequat pharetra.</p>
+                <p>Vestibulum sit amet ipsum lacus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, iaculis pretium sem orci aliquet mauris. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. </p><p>Suspendisse potenti. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Suspendisse potenti H<sub>2</sub>0. </p>
             </section>
          </div>  	
       </div>
@@ -154,71 +156,139 @@
       <h3>Accordion</h3>
       <div class="example">
 
-         <div id="accordian1" class="tabpanel" role="tablist" multiselectable="true"> 
-
-           <h3 id="tab1" class="tab accordian selected" aria-selected="true" aria-controls="panel1" aria-expanded="true" role="tab" tabindex="0">
-             <img src="http://www.oaa-accessibility.org/media/examples/images/expanded.gif" alt="expanded" /> 
-             Crust 
-           </h3> 
-
-           <div id="panel1" class="panel accordian" aria-labelledby="tab1" aria-hidden="false" role="tabpanel"> 
-             <h3 id="crust-label">Select Crust</h3> 
-              
-                   <ul class="controlList" aria-labelledby="crust-label"> 
-                     <li><input id="p1_opt1" type="radio" name="crust" value="crust1" /><label for="p1_opt1">Deep Dish</label></li> 
-                     <li><input id="p1_opt2" type="radio" name="crust" value="crust2" checked="checked" /><label for="p1_opt2">Thick and cheesy</label></li> 
-                     <li><input id="p1_opt3" type="radio" name="crust" value="crust3" /><label for="p1_opt3">Thick and spicy</label></li> 
-                     <li><input id="p1_opt4" type="radio" name="crust" value="crust4" /><label for="p1_opt4">Thin</label></li> 
-                  </ul> 
-           </div> 
-
-           <h3 id="tab2" class="tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="tab" tabindex="-1"> 
-             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
-             Veggies 
-           </h3> 
-           <div id="panel2" class="panel accordian" aria-labelledby="tab2" aria-hidden="true" role="tabpanel"> 
-             <h3 id="veg-label">Select Vegetables</h3>   
-              
-                  <ul class="controlList" aria-labelledby="veg-label"> 
-                     <li><input id="p2_opt1" type="checkbox" name="veg" value="black olives" /><label for="p2_opt1">Black Olives</label></li> 
-                     <li><input id="p2_opt2" type="checkbox" name="veg" value="green olives" /><label for="p2_opt2">Green Olives</label></li> 
-                     <li><input id="p2_opt3" type="checkbox" name="veg" value="green peppers" /><label for="p2_opt3">Green Peppers</label></li> 
-                     <li><input id="p2_opt4" type="checkbox" name="veg" value="mushrooms" /><label for="p2_opt4">Mushrooms</label></li> 
-                     <li><input id="p2_opt5" type="checkbox" name="veg" value="onions" /><label for="p2_opt5">Onions</label></li> 
-                     <li><input id="p2_opt6" type="checkbox" name="veg" value="pineapple" /><label for="p2_opt6">Pineapple</label></li> 
-                  </ul> 
-           </div> 
-
-           <h3 id="tab3" class="tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="tab" tabindex="-1"> 
-             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
-             Carnivore 
-           </h3> 
-           <div id="panel3" class="panel accordian" aria-labelledby="tab3" aria-hidden="true" role="tabpanel"> 
-             <h3 id="meat-label">Select Carnivore Options</h3> 
-              
-                   <ul class="controlList" aria-labelledby="meat-label"> 
-                     <li><input id="p3_opt1" type="checkbox" name="meat" value="pepperoni" /><label for="p3_opt1">Pepperoni</label></li> 
-                     <li><input id="p3_opt2" type="checkbox" name="meat" value="sausage" /><label for="p3_opt2">Italian Sausage</label></li> 
-                     <li><input id="p3_opt3" type="checkbox" name="meat" value="ham" /><label for="p3_opt3">Ham</label></li> 
-                     <li><input id="p3_opt4" type="checkbox" name="meat" value="hamburger" /><label for="p3_opt4">Hamburger</label></li> 
-                   </ul> 
-           </div> 
-
-           <h3 id="tab4" class="tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="tab" tabindex="-1"> 
-             <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
-             Delivery 
-           </h3> 
-           <div id="panel4" class="panel accordian" aria-labelledby="tab4" aria-hidden="true" role="tabpanel"> 
-              <h3 id="delivery-label">Select Delivery Method</h3> 
-              
-            <ul class="controlList" aria-labelledby="delivery-label"> 
-               <li><input id="p4_opt1" type="radio" name="delivery" value="delivery1" checked="checked" /><label for="p4_opt1">Delivery</label></li> 
-               <li><input id="p4_opt2" type="radio" name="delivery" value="delivery2" /><label for="p4_opt2">Eat in</label></li> 
-               <li><input id="p4_opt3" type="radio" name="delivery" value="delivery3" /><label for="p4_opt3">Carry out</label></li> 
-               <li><input id="p4_opt4" type="radio" name="delivery" value="delivery4" /><label for="p4_opt4">Overnight mail</label></li> 
-            </ul> 
+<div id="accordian1" class="accordion-wrap col-md-12 below48" role="accordionlist" multiselectable="true"> 
+         <h4>Edit Permissions</h4>
+         <h5 id="tab1" class="accordion-tab accordian" aria-selected="true" aria-controls="panel1" aria-expanded="true" role="accordiantab" tabindex="0">
+         <img src="http://www.oaa-accessibility.org/media/examples/images/expanded.gif" alt="expanded" /> 
+         Permission Category
+         </h5> 
+         <div id="panel1" class="accordion-panel accordian" aria-labelledby="tab1" aria-hidden="false" role="accordionpanel">
+                <div class="form-group mar-tb0">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                </div>
          </div>
-            
+
+         <h5 id="tab2" class="accordion-tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="accordiantab" tabindex="-1"> 
+         <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+         Permission Category 
+         </h5> 
+         <div id="panel2" class="accordion-panel accordian" aria-labelledby="tab2" aria-hidden="true" role="accordionpanel">
+            <div class="form-group mar-tb0">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                </div>
+         </div>
+
+         <h5 id="tab3" class="accordion-tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="accordiantab" tabindex="-1">
+            <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+            Permission Category 
+         </h5> 
+         <div id="panel3" class="accordion-panel accordian" aria-labelledby="tab3" aria-hidden="true" role="accordionpanel">
+            <div class="form-group mar-tb0">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                </div>
+         </div>
+
+         <h5 id="tab4" class="accordion-tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="accordiantab" tabindex="-1"> 
+            <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" /> 
+            Permission Category 
+         </h5> 
+         <div id="panel4" class="accordion-panel accordian" aria-labelledby="tab4" aria-hidden="true" role="accordionpanel"> 
+            <div class="form-group mar-tb0">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="status" class="form-checkbox">
+                        Permission
+                    </label>
+                </div>
+         </div>
       </div>
 
       </div>
@@ -278,12 +348,18 @@
 	</div>
 
 
+	<dialog></dialog>
+
+
 <!-- Scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="/js/jquery-accessibleMegaMenu.js"></script>
 <script src="/js/global.js"></script>
 
-{ page.scripts }
+
+
+<script src="/js/accessible-accordion.js" type="text/javascript"></script>
+
 
 </body>
 </html>
