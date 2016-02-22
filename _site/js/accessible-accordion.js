@@ -1,6 +1,6 @@
 $(document).ready(function() { 
   var panel1 = new tabpanel("accordian1", true); 
-});
+}); 
 
 // 
 // keyCodes() is an object to contain keycodes needed for the application 

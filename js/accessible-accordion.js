@@ -1,6 +1,6 @@
 $(document).ready(function() { 
   var panel1 = new tabpanel("accordian1", true); 
-});
+}); 
 
 // 
 // keyCodes() is an object to contain keycodes needed for the application 
@@ -48,8 +48,8 @@ function tabpanel(id, accordian) {
   this.accordian = accordian; // true if this is an accordian control 
   this.$panel = $('#' + id);  // store the jQuery object for the panel 
   this.keys = new keyCodes(); // keycodes needed for event handlers 
-  this.$tabs = this.$panel.find('.tab'); // Array of panel tabs. 
-  this.$panels = this.$panel.children('.panel'); // Array of panel. 
+  this.$tabs = this.$panel.find('.accordion-tab'); // Array of panel tabs. 
+  this.$panels = this.$panel.children('.accordion-panel'); // Array of panel. 
 
   // Bind event handlers 
   this.bindHandlers(); 

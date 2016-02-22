@@ -771,7 +771,12 @@ input[type="tel"]:hover, input[type="color"]:hover,
     
 }
 
-input[type="radio"], input[type="checkbox"] { margin-left: 0; margin-top: 0; position: relative; top: 2px; }
+input[type="radio"], input[type="checkbox"] { 
+    margin-left: 0; 
+    margin-top: 0; 
+    position: relative; 
+    top: 2px; 
+}
 
 ::-webkit-input-placeholder { color: #CFCFCF; }
 :-moz-placeholder { color: #CFCFCF; }
@@ -827,6 +832,10 @@ input.disabled {
     border: 2px solid #CFCFCF;
     border-radius: 4px;
     position: relative;
+}
+textarea.form-control {
+    padding: 10px;
+    min-height: 96px;
 }
 
 .input-lg {
@@ -1583,7 +1592,6 @@ dialog[open] [role="document"] {
     float: left;
     margin-right: 15px;
 }
-
 
 
 
