@@ -113,7 +113,7 @@
 	</header>
 
 	<div class="wrap">
-		<div id="content" class="main-content mc-content selfclear larger-mc-content">    
+		<div id="content" class="main-content selfclear">    
 			<div class="col-md-12">
 	<div role="main" id="content" class="content selfclear relative">
 		<div class="header">
@@ -129,10 +129,10 @@
 				<button class="inline export-button float-right">Export</button>
 			</fieldset>
 			<fieldset class="container popup filters" aria-hidden="false">
-				<div class="row filter-list">
+				<div class="row filter-list below12">
 					<div class="col-md-2">
 						<h5 class="small-meta fwb">Patron Category</h5>
-						<select class="form-control">
+						<select class="form-control below12">
 							<option>Any</option>
 						</select>
 						<h5 class="small-meta fwb">Patron Type</h5>
@@ -142,7 +142,7 @@
 					</div>
 					<div class="col-md-2">
 						<h5 class="small-meta fwb">Status</h5>
-						<select class="form-control">
+						<select class="form-control below12">
 							<option>Any</option>
 						</select>
 						<h5 class="small-meta fwb">Reasons</h5>
@@ -152,7 +152,7 @@
 					</div>
 					<div class="col-md-2">
 						<h5 class="small-meta fwb">Gender</h5>
-						<select class="form-control">
+						<select class="form-control below12">
 							<option>Any</option>
 							<option>Male</option>
 							<option>Female</option>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="col-md-2">
 						<h5 class="small-meta fwb">Language</h5>
-						<select class="form-control">
+						<select class="form-control below12">
 							<option>Any</option>
 							<option>English</option>
 							<option>Spanish</option>
@@ -176,21 +176,64 @@
 						</select>
 					</div>
 					<div class="col-md-2">
-	                    <h5 class="small-meta fwb">Machines Assignment</h5>
-	                    <label class="label-radio">
-	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                    <h5 class="small-meta fwb">Status by Medium</h5>
+	                    <div class="row">
+	                    	<div class="col-md-6">
+		                    	<p class="small-meta below12">Books</p>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        BB
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        CB
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        DF
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        LB
+			                    </label>
+		                    </div>
+	                    	<div class="col-md-6">
+		                    	<p class="small-meta below12">Magazines</p>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        BB
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        CB
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        DF
+			                    </label>
+			                    <label class="label-checkbox">
+			                        <input type="checkbox" class="form-checkbox">
+			                        LB
+			                    </label>
+		                    </div>
+	                    </div>
+					</div>
+					<div class="col-md-2">
+	                    <h5 class="small-meta fwb">Machine Assignment</h5>
+	                    <label class="label-checkbox">
+	                        <input type="checkbox" class="form-checkbox">
 	                        CBM
 	                    </label>
-	                    <label class="label-radio">
-	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                    <label class="label-checkbox">
+	                        <input type="checkbox" class="form-checkbox">
 	                        TDBM
 	                    </label>
-	                    <label class="label-radio">
-	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                    <label class="label-checkbox">
+	                        <input type="checkbox" class="form-checkbox">
 	                        TBM
 	                    </label>
-	                    <label class="label-radio">
-	                        <input type="radio" name="machine-assignments" class="form-radio">
+	                    <label class="label-checkbox">
+	                        <input type="checkbox" class="form-checkbox">
 	                        CO
 	                    </label>
 					</div>

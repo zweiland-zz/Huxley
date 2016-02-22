@@ -159,7 +159,7 @@ a[rel="external"]:after {
 
 #skiplink-container {
     text-align: center;
-    background: #e5f3ff;
+    background: #000000;
 }
 #skiplink-container div {
     text-align: left;
@@ -1527,7 +1527,7 @@ p.gutter-filler {
 .feedback-block {
     font-size: 15px;
     padding: 5px 0 5px 0;
-    /*background-color: #E5F3FF;*/
+    background-color: #FFF !important;
     border: 4px solid #ABD8FF;
     border-radius: 6px;
     color: #000;
@@ -1537,10 +1537,19 @@ p.gutter-filler {
     line-height: 36px;
     margin: 0;
 }
-.info {
-    /*background-color: #E5F3FF;*/
+.feedback-block.info {
+    background-color: #E5F3FF;
     border: 4px solid #ABD8FF;
 }
+.feedback-block.success {
+    background-color: #e1ffbe;
+    border: 4px solid #B5FF5C;
+}
+.feedback-block.warning {
+    background-color: #F2FFA9;
+    border: 4px solid #FFBF47;
+}
+
 
 
 
