@@ -6,8 +6,10 @@
 	<meta name="copyright" content="Copyright (c) 2015 Ambonare. All Rights Reserved.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta content="img/favicons/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="/css/huxley.css">
 	
+	<script src="/js/html5shiv.js"></script>
 </head>
 <body>
 
@@ -22,12 +24,15 @@
 	<header role="banner" id="global-header" class="">
 		<div class="header-wrapper">
 			<div class="header-global">
+				<div class="header-logo">
+					<a href="/" title="Go to Dashboard" id="logo" class="content">
+						<img src="/img/huxley-logo.png" alt="Go to Dashboard" />
+					</a>
+				</div>
 				<nav id="global-nav" class="float-left">
 					<ul class="nav-menu">
-						<li class="nav-item fwb">
-							<a href="#">
-								<img src="/img/icon-menu.png" alt="Navigate to Business Groups" />
-							</a>
+						<li class="nav-item fwb nav-has-sub">
+							<a href="#">Business Groups</a>
 							<div class="sub-nav">
 								<ul class="sub-nav-group">
 									<li><a href="/reader-services/">Reader Services</a></li>
@@ -39,17 +44,6 @@
 								</ul>
 							</div>
 						</li>
-					</ul>
-				</nav>
-
-				<div class="header-logo">
-					<a href="/" title="Go to Dashboard" id="logo" class="content">
-						<img src="/img/huxley-logo.png" alt="Go to Dashboard" />
-					</a>
-				</div>
-
-				<nav id="global-nav" class="float-left">
-					<ul class="nav-menu">
 						<li class="nav-item fwb nav-has-sub">
 							<a href="/books/">Books</a>
 							<div class="sub-nav">
@@ -90,7 +84,6 @@
 						</li>
 					</ul>
 				</nav>
-
 				<nav id="global-utility" class="float-right"> 
 					<ul class="nav-menu selfclear">
 						<li class="nav-item fwb nav-has-sub">
@@ -99,7 +92,7 @@
 								<ul class="sub-nav-group">
 									<li><a href="/settings/users/view/">Profile</a></li>
 									<li><a href="/settings/users/">Settings</a></li>
-									<li><a href="/patterns/">Log out</a></li>
+									<li><a href="/patterns/">Huxley Pattern Library</a></li>
 								</ul>
 							</div>
 						</li>
@@ -221,11 +214,9 @@
 
 <!-- Scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="/js/jquery-accessibleMegaMenu.js"></script>
 <script src="/js/global.js"></script>
-
-
-
 
 </body>
 </html>

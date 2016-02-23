@@ -16,7 +16,22 @@ $(function() {
 	  if (e.keyCode == 27) $('#global-search-overlay').hide();   // esc
 	});
 
-    
+  /* Details functionality */
+  // functions to test setting state via javascript
+  function closeAll() {
+    var i, a = document.getElementsByTagName('details');
+      for (i in a) {
+      a[i].open = '';
+      }
+  }
+  
+  function openAll() {
+    var i, a = document.getElementsByTagName('details');
+      for (i in a) {
+      a[i].open = 'open';
+    }
+  }
+
 
     /* Filters */
 
